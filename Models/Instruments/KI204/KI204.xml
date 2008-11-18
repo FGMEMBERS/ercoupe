@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>KI204.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Bearing</object-name>
+  <object-name>Face</object-name>
+  <object-name>GSNeedle</object-name>
+  <object-name>NavNeedle</object-name>
+  <object-name>PointerFrom</object-name>
+  <object-name>PointerTo</object-name>
+  <object-name>Scale</object-name>
+  <object-name>GSFlag</object-name>
+  <object-name>NavFlag</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.2</green>
+   <blue>0.0</blue>
+   <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Bearing</object-name>
+   <property>/instrumentation/nav[0]/radials/selected-deg</property>
+  <factor>-1</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NavNeedle</object-name>
+  <property>/instrumentation/nav[0]/heading-needle-deflection</property>
+  <factor>4</factor>
+  <min>-30</min>
+  <max>30</max>
+  <center>
+   <x-m>-0.03</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>GSNeedle</object-name>
+  <property>/instrumentation/nav[0]/gs-needle-deflection</property>
+  <factor>4</factor>
+  <min>-30</min>
+  <max>30</max>
+  <center>
+   <x-m>-0.03</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>BearingDec</object-name>
+  <visible>false</visible>
+  <action>
+    <name>small decrease</name>
+    <button>0</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+       <property>/instrumentation/nav[0]/radials/selected-deg</property>
+      <step>-1</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+  <action>
+    <name>large decrease</name>
+    <button>1</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+       <property>/instrumentation/nav[0]radials/selected-deg</property>
+      <step>-5</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>BearingInc</object-name>
+  <visible>false</visible>
+  <action>
+    <name>small increase</name>
+    <button>0</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+       <property>/instrumentation/nav[0]radials/selected-deg</property>
+      <step>1</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+  <action>
+    <name>large increase</name>
+    <button>1</button>
+    <repeatable>true</repeatable>
+    <binding>
+      <command>property-adjust</command>
+       <property>/instrumentation/nav[0]radials/selected-deg</property>
+      <step>5</step>
+      <min>0</min>
+      <max>360</max>
+      <wrap>1</wrap>
+    </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>GSFlag</object-name>
+  <condition>
+   <not><property>instrumentation/nav[0]/has-gs</property></not>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>NavFlag</object-name>
+  <condition>
+   <not><property>instrumentation/nav[0]/in-range</property></not>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>PointerFrom</object-name>
+  <condition>
+   <property>instrumentation/nav[0]/from-flag</property>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+	<object-name>PointerTo</object-name>
+  <condition>
+   <property>instrumentation/nav[0]/to-flag</property>
+  </condition>
+ </animation>
+
+</PropertyList>
+
+

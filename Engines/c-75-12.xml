@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+  File:     c-75-12.xml
+  Author:   hacked from io320 
+
+  Inputs:
+    name:           C-75
+    type:           piston
+    power:          75.0 hp
+    augmented?      no
+    injected?       no
+-->
+
+<piston_engine name="c-75-12">
+  <minmp unit="INHG">          6.0 </minmp>
+  <maxmp unit="INHG">         30.0 </maxmp>
+  <displacement unit="IN3"> 188.00 </displacement>
+  <maxhp>         75.00 </maxhp>
+  <cycles>         4.0 </cycles>
+  <idlerpm>      550.0 </idlerpm>
+  <maxrpm>      2300.0 </maxrpm>
+  <maxthrottle>    1.0 </maxthrottle>
+  <minthrottle>    0.1 </minthrottle>
+</piston_engine>
