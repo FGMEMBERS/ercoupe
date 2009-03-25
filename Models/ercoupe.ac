@@ -1,28 +1,28 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "ac3dmat1.001" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0 0 0 shi 80 trans 0
-MATERIAL "extw" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.592 0.592 0.824 shi 11 trans 0
-MATERIAL "ext" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.592 0.584 0.824 shi 11 trans 0
+MATERIAL "ac3dmat1.001" rgb 1 1 1 amb 0.8 0.8 0.8 emis 0 0 0 spec 0 0 0 shi 80 trans 0
+MATERIAL "extw" rgb 1 1 1 amb 0.8 0.8 0.8 emis 0 0 0 spec 0.592 0.592 0.824 shi 11 trans 0
+MATERIAL "ext" rgb 1 1 1 amb 0.8 0.8 0.8 emis 0 0 0 spec 0.592 0.584 0.824 shi 11 trans 0
 MATERIAL "ac3dmat1.003" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0 0 0 shi 80 trans 0
-MATERIAL "ac3dmat13" rgb 0.533333 0.533333 0.533333 amb 0.1 0.1 0.1 emis 0 0 0 spec 0 0 0 shi 10 trans 0
-MATERIAL "NoName.001" rgb 0 0.412 0.412 amb 0.274667 0.274667 0.274667 emis 0 0 0 spec 0.502 0.502 0.502 shi 50 trans 0.898
+MATERIAL "ac3dmat13" rgb 0.533333 0.533333 0.533333 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 10 trans 0
+MATERIAL "NoName.001" rgb 0 0.412 0.412 amb 0.0 0.4 0.4 emis 0 0 0 spec 0.502 0.502 0.502 shi 50 trans 0.898
 MATERIAL "DefaultWhite.001" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "cabmat" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.757 0.757 0.745 shi 21 trans 0
-MATERIAL "ac3dmat1.004" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.498 0.49 0.49 shi 60 trans 0
+MATERIAL "cabmat" rgb 1 1 1 amb 0.8 0.8 0.8 emis 0 0 0 spec 0.757 0.757 0.745 shi 21 trans 0
+MATERIAL "ac3dmat1.004" rgb 1 1 1 amb 0.8 0.8 0.8 emis 0 0 0 spec 0.498 0.49 0.49 shi 60 trans 0
 MATERIAL "WhiteLightOff" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0 0 0 shi 72 trans 0
-MATERIAL "ac3dmat3" rgb 1 0 0 amb 0.2 0.2 0.2 emis 0 0 0 spec 0 0 0 shi 10 trans 0
+MATERIAL "ac3dmat3" rgb 1 0 0 amb 1.0 0 0 emis 0 0 0 spec 0 0 0 shi 10 trans 0
 MATERIAL "DefaultWhite.002" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "ac3dmat1.002" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0 0 0 shi 10 trans 0
-MATERIAL "ac3dmat3.001" rgb 1 0 0 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.204 0.204 0.204 shi 80 trans 0
-MATERIAL "ac3dmat6.002" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0 0 0 shi 50 trans 0.929
-MATERIAL "ac3dmat6.001" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0 0 0 shi 50 trans 0.502
-MATERIAL "ac3dmat6" rgb 0 1 0 amb 0.2 0.2 0.2 emis 0 0 0 spec 0 0 0 shi 80 trans 0
+MATERIAL "ac3dmat1.002" rgb 1 1 1 amb 0.8 0.8 0.8 emis 0 0 0 spec 0 0 0 shi 10 trans 0
+MATERIAL "ac3dmat3.001" rgb 1 0 0 amb 1.0 0.0 0.0 emis 0 0 0 spec 0.204 0.204 0.204 shi 80 trans 0
+MATERIAL "ac3dmat6.002" rgb 1 1 1 amb 0.8 0.8 0.8 emis 0 0 0 spec 0 0 0 shi 50 trans 0.929
+MATERIAL "ac3dmat6.001" rgb 1 1 1 amb 0.8 0.8 0.8 emis 0 0 0 spec 0 0 0 shi 50 trans 0.502
+MATERIAL "ac3dmat6" rgb 0 1 0 amb 0.0 1.0 0.0 emis 0 0 0 spec 0 0 0 shi 80 trans 0
 MATERIAL "NoName" rgb 0.89 0.89 0.89 amb 0.89 0.89 0.89 emis 0 0 0 spec 1 1 1 shi 50 trans 0
 MATERIAL "DefaultWhite.003" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "emissivered" rgb 1 0 0 amb 0.2 0.2 0.2 emis 0.474333 0.474333 0.474333 spec 0 0 0 shi 10 trans 0
-MATERIAL "ac3dmat0.001" rgb 0.125 0.125 0.125 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.573 0.58 0.573 shi 51 trans 0
-MATERIAL "ac3dmat1" rgb 1 1 1 amb 0.1 0.1 0.1 emis 0 0 0 spec 0 0 0 shi 10 trans 0
-MATERIAL "ac3dmat14" rgb 0.8 0.8 0.8 amb 0.1 0.1 0.1 emis 0 0 0 spec 0 0 0 shi 10 trans 0
+MATERIAL "emissivered" rgb 1 0 0 amb 1.0 0.0 0.0 emis 0.474333 0.474333 0.474333 spec 0 0 0 shi 10 trans 0
+MATERIAL "ac3dmat0.001" rgb 0.125 0.125 0.125 amb 0.1 0.1 0.1 emis 0 0 0 spec 0.573 0.58 0.573 shi 51 trans 0
+MATERIAL "ac3dmat1" rgb 1 1 1 amb 0.8 0.8 0.8 emis 0 0 0 spec 0 0 0 shi 10 trans 0
+MATERIAL "ac3dmat14" rgb 0.8 0.8 0.8 amb 0.8 0.8 0.8 emis 0 0 0 spec 0 0 0 shi 10 trans 0
 MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
 kids 60
