@@ -58,11 +58,11 @@ var Fuel = {
 	new : func (n) {
 		var m = { parents : [Fuel] };
 		
-		m.headerN = props.globals.getNode("consumables/fuel/tank[0]/level-gal_us", 1);
-		m.headerCap = props.globals.getNode("consumables/fuel/tank[0]/capacity-gal_us").getValue();
-		m.winglN =  props.globals.getNode("consumables/fuel/tank[1]/level-gal_us", 1);
-		m.wingrN =  props.globals.getNode("consumables/fuel/tank[2]/level-gal_us", 1);
-		m.fuelpumpN = props.globals.getNode("systems/electrical/outputs/fuel-pump", 1);
+		m.headerN = props.globals.initNode("consumables/fuel/tank[0]/level-gal_us", 0, "DOUBLE");
+		m.headerCap = props.globals.initNode("consumables/fuel/tank[0]/capacity-gal_us", 0 "DOUBLE").getValue();
+		m.winglN =  props.globals.initNode("consumables/fuel/tank[1]/level-gal_us", 0, "DOUBLE");
+		m.wingrN =  props.globals.initNode("consumables/fuel/tank[2]/level-gal_us", 0, "DOUBLE");
+		m.fuelpumpN = props.globals.initNode("systems/electrical/outputs/fuel-pump", 0, "DOUBLE");
 #		needs switch for header - > engine
 
 		return m;
