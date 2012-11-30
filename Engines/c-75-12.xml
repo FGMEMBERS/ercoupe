@@ -1,24 +1,48 @@
 <?xml version="1.0"?>
 <!--
   File:     c-75-12.xml
-  Author:   hacked from io320 
+  Author:   Ron Jensen
+  
+  Reference: http://en.wikipedia.org/wiki/Continental_O-190
+General characteristics
 
-  Inputs:
-    name:           C-75
-    type:           piston
-    power:          75.0 hp
-    augmented?      no
-    injected?       no
+    * Type: 4-cylinder air-cooled horizontally opposed aircraft piston engine
+    * Bore: 4.0625 in (103 mm)
+    * Stroke: 3.625 in (92 mm)
+    * Displacement: 188 in^3 (3.1 L)
+    * Dry weight: 180 lb (81 kg)
+
+Components
+
+    * Fuel type: 80/87 octane avgas
+    * Cooling system: Air-cooled
+
+Performance
+
+    * Power output: 85 hp (63 kW) at 2,575 rpm
+    * Compression ratio: 6.3:1
+    * Fuel consumption: 5.4 US gal/hr
+    * Oil consumption: Maximum desirable 0.4 US quarts/hr
+
 -->
 
 <piston_engine name="c-75-12">
-  <minmp unit="INHG">          6.0 </minmp>
-  <maxmp unit="INHG">         30.0 </maxmp>
+  <minmp unit="INHG">         10.0 </minmp>
+  <maxmp unit="INHG">         26.0 </maxmp>
   <displacement unit="IN3"> 188.00 </displacement>
   <maxhp>         75.00 </maxhp>
+
   <cycles>         4.0 </cycles>
+
   <idlerpm>      550.0 </idlerpm>
   <maxrpm>      2300.0 </maxrpm>
-  <maxthrottle>    1.0 </maxthrottle>
-  <minthrottle>    0.1 </minthrottle>
+
+  <bore unit="IN">   4.0625 </bore>
+  <stroke unit="IN"> 3.625 </stroke>
+
+  <compression-ratio> 6.3 </compression-ratio>
+  <cylinders> 4 </cylinders>
+  <sparkfaildrop> 0.1 </sparkfaildrop> 
+  <man-press-lag> 0.1 </man-press-lag> 
+
 </piston_engine>
