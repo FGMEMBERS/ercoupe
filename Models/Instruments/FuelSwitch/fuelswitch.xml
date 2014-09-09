@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>fuelswitch.ac</path>
+
+	<animation>
+		<type>material</type>
+		<object-name>fuelswitch</object-name>
+		<emission>
+			<red>0.5</red>
+			<green>0.2</green>
+			<blue>0.0</blue>
+			<factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>switch</object-name>
+		<property>/consumables/fuel/tank/selected</property>
+		<factor>90</factor>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<visible>true</visible>
+		<object-name>switch</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>/consumables/fuel/tank/selected</property>
+			</binding>          
+		</action>
+	</animation>
+</PropertyList>

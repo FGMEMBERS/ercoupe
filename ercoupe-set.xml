@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+
+JSBSim Ercoupe with 3D cockpit.
+
+Using David Megginson's 172P as a starting point.
+
+
+************************************************************************
+-->
+
+<PropertyList>
+
+ <sim>
+
+  <description>Ercoupe</description>
+  <author>Ron Jensen (jentron) - FDM 3d Models</author>
+  <author> (pab) - 3d Models</author>
+  <status>alpha</status>
+
+  <flight-model archive="y">jsb</flight-model>
+  <aero archive="y">ercoupe</aero>
+  <startup>
+     <splash-texture>Aircraft/ercoupe/ercoupe-splash.rgb</splash-texture>
+  </startup>
+
+    <model>
+      <path archive="y">Aircraft/ercoupe/Models/ercoupe.xml</path>
+      <livery>
+        <file type="string">gray</file>
+      </livery>
+    </model>
+
+  <systems>
+    <electrical>
+      <!-- null electrical system path here so we can use a nasal based -->
+      <!-- model defined later in the nasal section of this file. -->
+      <path></path>
+    </electrical>
+  </systems>
+
+  <menubar include="Dialogs/ercoupe-menu.xml"/>
+
+  <!-- tutorials include="c172-tutorial.xml"/  -->
+
+  <help>
+   <title>Ercoupe</title>
+   <line>Coordinated Flight Aircraft</line>
+   <line>Rudder and nose gear are tied to aileron control</line>
+   <line>________________________Speeds______________________________</line>
+   <line>Vx: Not published</line>
+   <line>Vy: 70 MPH   Estimated Best Rate of Climb</line>
+   <line>Vne: 144 MPH   Published Never Exceed</line>
+   <line>________________________Procedures__________________________</line>
+   <line>Full throttle, rotate at 60 to 70 MPH</line>
+   <line>Climbout: 70 MPH or Faster</line>
+   <line>Cruise: Throttle 65%, Mixture rich of peak,</line>
+   <line>Landing: 65 MPH</line>
+   <line>________________________Cabin_Windows______________________</line>
+   <line>Open/Close  ctrl-b</line>
+  </help>
+  <!-- hide the 2D panel -->
+ 
+  <panel>
+   <path>Aircraft/ercoupe/Panels/Test-panel.xml</path> 
+   <visibility archive="y">false</visibility>
+  </panel>
+
+  <!-- position the pilot viewpoint and angle -->
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  
+  <view>
+   <internal archive="y">true</internal>
+   <config>
+     <x-offset-m archive="y">-0.21</x-offset-m>
+     <y-offset-m archive="y">0.85</y-offset-m>
+     <z-offset-m archive="y">0.24</z-offset-m>
+     <pitch-offset-deg>-9</pitch-offset-deg>
+
+   </config>
+  </view>
+
+  <view n="101">
+    <name>Passenger View</name>
+    <!-- type>lookfrom</type -->
+    <internal type="bool">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+      <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+      <default-pitch-deg type="double">0</default-pitch-deg>
+      <default-heading-deg type="double">0</default-heading-deg>
+      <front-direction-deg type="double">0</front-direction-deg>
+      <front-left-direction-deg type="double">45</front-left-direction-deg>
+      <left-direction-deg type="double">90</left-direction-deg>
+      <back-left-direction-deg type="double">135</back-left-direction-deg>
+      <back-direction-deg type="double">180</back-direction-deg>
+      <back-right-direction-deg type="double">225</back-right-direction-deg>
+      <right-direction-deg type="double">270</right-direction-deg>
+      <front-right-direction-deg type="double">315</front-right-direction-deg>
+      <x-offset-m type="double"> 0.24</x-offset-m>  <!-- x left/right -->
+      <y-offset-m type="double"> 0.85</y-offset-m>  <!-- up/down    -->
+      <z-offset-m type="double"> 0.24</z-offset-m>   <!--  x front/back -->
+      <pitch-offset-deg>-9</pitch-offset-deg>
+      <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+    </config>
+  </view>
+
+  <view n="100">
+    <name>Landing Gear View</name>
+    <type>lookfrom</type>
+    <internal type="bool">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+      <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+      <default-pitch-deg type="double">0</default-pitch-deg>
+      <default-heading-deg type="double">0</default-heading-deg>
+      <front-direction-deg type="double">0</front-direction-deg>
+      <front-left-direction-deg type="double">45</front-left-direction-deg>
+      <left-direction-deg type="double">90</left-direction-deg>
+      <back-left-direction-deg type="double">135</back-left-direction-deg>
+      <back-direction-deg type="double">180</back-direction-deg>
+      <back-right-direction-deg type="double">225</back-right-direction-deg>
+      <right-direction-deg type="double">270</right-direction-deg>
+      <front-right-direction-deg type="double">315</front-right-direction-deg>
+      <x-offset-m type="double">0.0</x-offset-m>
+      <y-offset-m type="double">-0.5</y-offset-m>
+      <z-offset-m type="double">0.0</z-offset-m>
+      <pitch-offset-deg>0</pitch-offset-deg>
+      <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+    </config>
+  </view>
+
+  <sound>
+   <path archive="y">Aircraft/ercoupe/ercoupe-sound.xml</path>
+  </sound>
+
+ </sim>
+
+ <!-- trim for level cruise -->
+
+ <controls>
+  <flight>
+   <aileron-trim>0.054</aileron-trim>
+   <elevator-trim>0.0</elevator-trim><!-- FIXME set me! -->
+  </flight>
+  <avionics>
+   <power type="bool">1</power>
+  </avionics>
+  <engines>
+   <engine n="0">
+    <magnetos>3</magnetos>
+   </engine>
+  </engines>
+ </controls>
+
+ <consumables>
+  <fuel>
+   <tank n="0">
+    <level-gal_us>12</level-gal_us>
+   </tank>
+   <!--tank n="1">
+    <level-gal_us>12</level-gal_us>
+   </tank-->
+  </fuel>
+ </consumables>
+
+ <instrumentation>
+  <attitude-indicator>
+   <config>
+    <tumble-flag archive="y" type="bool">true</tumble-flag>
+   </config>
+  </attitude-indicator>
+  <encoder>
+   <serviceable type="bool">true</serviceable>
+  </encoder>
+ </instrumentation>
+
+ <engines>
+  <engine>
+   <rpm type="double">700</rpm>
+  </engine>
+ </engines>
+
+ <nasal>
+  <ercoupe>
+    <file>Aircraft/ercoupe/Nasal/ercoupe.nas</file>
+    <file>Aircraft/ercoupe/Nasal/Electrical.nas</file>
+    <file>Aircraft/ercoupe/Nasal/liveries.nas</file> 
+  </ercoupe>
+ </nasal>
+ <payload>
+  <weight>
+   <name type="string">Pilot</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">300.0</max-lb>
+  </weight>
+  <weight>
+   <name type="string">Co-Pilot</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">300.0</max-lb>
+  </weight>
+  <weight>
+   <name type="string">Baggage</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">100.0</max-lb> <!-- WARNING: Max baggage "by the book" is 65lbs or less! -->
+  </weight>
+</payload>
+  
+</PropertyList>

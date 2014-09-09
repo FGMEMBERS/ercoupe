@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <path>CabinWindowsControl.ac</path>
+ <animation>
+  <type>pick</type>
+  <object-name>openclose</object-name>
+  <visible>false</visible>
+  <action>
+    <name>open-close windows</name>
+    <button>0</button>
+    <!-- repeatable>False</repeatable -->
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/flight/speedbrake</property>
+    </binding>
+  </action>
+ </animation>
+</PropertyList>
+
+
