@@ -71,7 +71,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
   </instrument>
 
 <!-- engine gauge cluster -->  
-  <instrument include="../../Instruments/clock.xml">
+  <instrument include="Aircraft/Instruments/clock.xml">
    <name>Chronometer</name>
    <x>162</x>
    <y>216</y>
@@ -79,7 +79,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>74</h>
   </instrument>
 
-  <instrument include="../../Instruments/egt.xml">
+  <instrument include="Aircraft/Instruments/egt.xml">
    <name>Exhaust Gas Temperature Gauge</name>
    <x>162</x>
    <y>142</y>
@@ -87,7 +87,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>74</h>
   </instrument>
 
-  <instrument include="../../Instruments/fuel.xml">
+  <instrument include="Aircraft/Instruments/fuel.xml">
    <name>Fuel Gauge</name>
    <x>85</x>
    <y>142</y>
@@ -95,7 +95,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>74</h>
   </instrument>
 
-  <instrument include="../../Instruments/oil.xml">
+  <instrument include="Aircraft/Instruments/oil.xml">
    <name>Oil Gauge</name>
    <x>85</x>
    <y>65</y>
@@ -103,7 +103,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>74</h>
   </instrument>
   
-  <instrument include="../../Instruments/vacamp.xml">
+  <instrument include="Aircraft/Instruments/vacamp.xml">
    <name>Vacuum Pressure Gauge</name>
    <x>162</x>
    <y>65</y>
@@ -115,7 +115,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
 
 <!-- engine controls cluster -->  
  
-  <instrument include="../../Instruments/rpm.xml">
+  <instrument include="Aircraft/Instruments/rpm.xml">
    <name>RPM Gauge</name>c172p-2d-panel.xml
    <x>496</x>
    <y>-25</y>
@@ -123,7 +123,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>115</h>
   </instrument>
 
-  <instrument include="../../Instruments/single-magneto-switch.xml">
+  <instrument include="Aircraft/Instruments/single-magneto-switch.xml">
    <name>Magneto switch panel</name>
    <x>120</x>
    <y>-180</y>
@@ -133,7 +133,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
   
 <!-- sacred six -->
 
-  <instrument include="../../Instruments/asi-160-knot.xml">
+  <instrument include="Aircraft/Instruments/asi-160-knot.xml">
    <name>Airspeed Indicator</name>
    <x>264</x>
    <y>235</y>
@@ -141,7 +141,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>115</h>
   </instrument>
 
-  <instrument include="../../Instruments/attitude-indicator.xml">
+  <instrument include="Aircraft/Instruments/attitude-indicator.xml">
    <name>Attitude Gyro</name>
    <x>380</x>
    <y>235</y>
@@ -149,7 +149,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>115</h>
   </instrument>
 
-  <instrument include="../../Instruments/altimeter.xml">
+  <instrument include="Aircraft/Instruments/altimeter.xml">
    <name>Altimeter</name>
    <x>496</x>
    <y>235</y>
@@ -157,7 +157,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>115</h>
   </instrument>
 
-  <instrument include="../../Instruments/turn.xml">
+  <instrument include="Aircraft/Instruments/turn.xml">
    <name>Turn Coordinator</name>
    <x>264</x>
    <y>100</y>
@@ -165,7 +165,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>115</h>
   </instrument>
 
-  <instrument include="../../Instruments/gyro.xml">
+  <instrument include="Aircraft/Instruments/gyro.xml">
    <name>Directional Gyro</name>
    <x>380</x>
    <y>100</y>
@@ -173,7 +173,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>115</h>
   </instrument>
 
-  <instrument include="../../Instruments/vertical.xml">
+  <instrument include="Aircraft/Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
    <x>496</x>
    <y>100</y>
@@ -184,7 +184,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
 <!-- end sacred six -->
 
 <!-- radio nav instruments --> 
-  <instrument include="../../Instruments/nav1.xml">
+  <instrument include="Aircraft/Instruments/nav1.xml">
    <name>VOR 1 Gauge</name>
    <x>620</x>
    <y>235</y>
@@ -192,7 +192,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>115</h>
   </instrument>
 
-  <instrument include="../../Instruments/nav1.xml">
+  <instrument include="Aircraft/Instruments/nav1.xml">
   <name>VOR 2 Gauge</name>
   <params>
    <nav-to-flag>/instrumentation/nav[1]/to-flag</nav-to-flag>
@@ -208,7 +208,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
   <w>115</w>
   <h>115</h>
   </instrument> 
-  <instrument include="../../Instruments/adf.xml">
+  <instrument include="Aircraft/Instruments/adf.xml">
    <name>ADF Gauge</name>
    <x>620</x>
    <y>-25</y>
@@ -222,13 +222,13 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
 
 <!-- radio stack -->
 
-  <instrument include="../../Instruments/markerbeacon.xml">
+  <instrument include="Aircraft/Instruments/markerbeacon.xml">
    <name>Marker Beacon Indicators</name>
    <x>770</x>
    <y>290</y>
    </instrument>
 
-  <instrument include="../../Instruments/navcom-radio.xml">
+  <instrument include="Aircraft/Instruments/navcom-radio.xml">
    <name>NavCom 1 Radio</name>
    <x>825</x>
    <y>240</y>
@@ -236,7 +236,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>60</h>
   </instrument>
 
-  <instrument include="../../Instruments/navcom-radio.xml">
+  <instrument include="Aircraft/Instruments/navcom-radio.xml">
    <name>NavCom 2 Radio</name>
    <params>
     <comm-freq-selected-prop>/instrumentation/comm[1]/frequencies/selected-mhz</comm-freq-selected-prop>
@@ -252,7 +252,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>60</h>
   </instrument>
 
-  <instrument include="../../Instruments/adf-radio.xml">
+  <instrument include="Aircraft/Instruments/adf-radio.xml">
    <name>ADF Radio</name>
    <x>825</x>
    <y>120</y>
@@ -260,20 +260,20 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
    <h>60</h>
   </instrument>
 
-  <instrument include="../../Instruments/dme.xml">
+  <instrument include="Aircraft/Instruments/dme.xml">
    <name>DME</name>
    <x>825</x>
    <y>-50</y>
   </instrument>
 
 <!--
-  <instrument include="../../Instruments/autopilot.xml">
+  <instrument include="Aircraft/Instruments/autopilot.xml">
    <name>Autopilot</name>
    <x>880</x>
    <y>-20</y>
   </instrument>
 -->
-  <instrument include="../../Instruments/KAP140TwoAxisAlt.xml">
+  <instrument include="Aircraft/Instruments/KAP140TwoAxisAlt.xml">
    <name>KAP140 Autopilot</name>
    <x>825</x>
    <y>60</y>
