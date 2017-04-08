@@ -28,37 +28,38 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>ercoupe-ext2.rgb</texture>
-
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
-    <specular>
-      <red-prop>specular/red</red-prop>
-      <green-prop>specular/green</green-prop>
-      <blue-prop>specular/blue</blue-prop>
-    </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
+
+<!--  Reflection effect -->
+  <effect>
+    <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec</inherits-from>
+    <object-name>Fuselage</object-name>
+    <object-name>LWing</object-name>
+    <object-name>RWing</object-name>
+    <object-name>VTail</object-name>
+    <object-name>HTail</object-name>
+    <object-name>Elevator</object-name>
+    <object-name>LAileron</object-name>
+    <object-name>RAileron</object-name>
+    <object-name>Rudder.a</object-name>
+    <object-name>Rudder.b</object-name>
+  </effect>/
+
+<!-- glass effect -->
+  <!-- glass effects -->
+  <effect>
+    <inherits-from>Aircraft/ercoupe/Models/Effects/glass/glass</inherits-from>
+    <object-name>WindscreenI</object-name>
+    <object-name>RWindowI</object-name>
+    <object-name>LWindowI</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Aircraft/ercoupe/Models/Effects/glass/reflection</inherits-from>
+    <object-name>WindscreenO</object-name>
+    <object-name>RWindowO</object-name>
+    <object-name>LWindowO</object-name>
+  </effect>
 
 <!-- Outside -->
  <model>
