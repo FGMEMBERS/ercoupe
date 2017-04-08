@@ -46,21 +46,6 @@ Using David Megginson's 172P as a starting point.
       <livery>
         <file type="string">gray</file>
       </livery>
-
-      <crew>
-        <pilot n="0">
-          <pose include="Models/Human/pose-pilot.xml"/>
-          <character>0</character>
-          <outfit>0</outfit>
-          <equipment>0</equipment>
-        </pilot>
-        <pilot n="1">
-          <pose include="Models/Human/pose-copilot.xml"/>
-          <character>0</character>
-          <outfit>0</outfit>
-          <equipment>0</equipment>
-        </pilot>
-      </crew>
     </model>
 
   <systems>
