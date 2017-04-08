@@ -4,6 +4,18 @@
 
  <path>ercoupe.ac</path>
 
+<!--
+ <model>
+  <name>Pilot</name>
+  <path>Human/female-pilot.xml</path>
+  <offsets>
+   <x-m>  0.12 </x-m>
+   <y-m> -0.20 </y-m>
+   <z-m> -0.65 </z-m>
+  </offsets>
+ </model>
+-->
+
 <!-- Livery  -->
   <nasal>
     <load>
@@ -43,7 +55,7 @@
     <object-name>RAileron</object-name>
     <object-name>Rudder.a</object-name>
     <object-name>Rudder.b</object-name>
-  </effect>/
+  </effect>
 
 <!-- glass effect -->
   <!-- glass effects -->
