@@ -25,9 +25,17 @@
       livery_update.stop();
     </unload>
   </nasal>
+
   <animation>
     <type>material</type>
     <object-name>Fuselage</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>ercoupe-ext2.rgb</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
     <object-name>LWing</object-name>
     <object-name>RWing</object-name>
     <object-name>VTail</object-name>
@@ -37,15 +45,19 @@
     <object-name>RAileron</object-name>
     <object-name>Rudder.a</object-name>
     <object-name>Rudder.b</object-name>
-    <property-base>sim/model/livery</property-base>
+    <property-base>sim/model/livery-wings</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>ercoupe-ext2.rgb</texture>
+    <texture>c150-02.rgb</texture>
   </animation>
 
 <!--  Reflection effect -->
   <effect>
-    <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec</inherits-from>
+    <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec-fuselage</inherits-from>
     <object-name>Fuselage</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec-wings</inherits-from>
     <object-name>LWing</object-name>
     <object-name>RWing</object-name>
     <object-name>VTail</object-name>
