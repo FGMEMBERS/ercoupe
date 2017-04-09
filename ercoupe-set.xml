@@ -92,7 +92,7 @@ Using David Megginson's 172P as a starting point.
      <x-offset-m archive="y">-0.19</x-offset-m>
      <y-offset-m archive="y">0.99</y-offset-m>
      <z-offset-m archive="y">0.19</z-offset-m>
-     <pitch-offset-deg>-10</pitch-offset-deg>
+     <pitch-offset-deg>-7.5</pitch-offset-deg>
 
    </config>
   </view>
