@@ -18,10 +18,15 @@ Using David Megginson's 172P as a starting point.
   <longdescription>
    The ERCO Ercoupe is a low-wing monoplane aircraft that was designed and built in the United States. It was first manufactured by the Engineering and Research Corporation (ERCO) shortly before World War II; several other manufacturers continued its production after the war. It was designed to be the safest fixed-wing aircraft that aerospace engineering could provide at the time.
   </longdescription>
-  <author>Ron Jensen (jentron) - FDM 3d Models</author>
-  <author> (pab) - 3d Models</author>
-  <status>alpha</status>
+  <author>Erik Hofman, Ron Jensen (FDM 3d Model), pab (3d Model)</author>
+  <status>beta</status>
 
+  <rating>
+    <FDM type="int">4</FDM>
+    <systems type="int">4</systems>
+    <cockpit type="int">4</cockpit>
+    <model type="int">4</model>
+  </rating>
   <tags>
     <tag>ecro</tag>
     <tag>low-wing</tag>
@@ -37,16 +42,29 @@ Using David Megginson's 172P as a starting point.
 
   <flight-model archive="y">jsb</flight-model>
   <aero archive="y">ercoupe</aero>
-  <startup>
-     <splash-texture>Aircraft/ercoupe/ercoupe-splash.rgb</splash-texture>
-  </startup>
 
-    <model>
-      <path archive="y">Aircraft/ercoupe/Models/ercoupe.xml</path>
-      <livery>
-        <file type="string">gray</file>
-      </livery>
-    </model>
+  <startup>
+<!-- <splash-texture>Aircraft/ercoupe/ercoupe-splash.rgb</splash-texture> -->
+  </startup>
+  <previews>
+    <preview>
+      <type>exterior</type>
+      <path>Preview/ercoupe.jpg</path>
+      <splash type="bool">true</splash>
+    </preview>
+    <preview>
+      <type>exterior</type>
+      <path>Preview/ercoupe2.jpg</path>
+      <splash type="bool">true</splash>
+    </preview>
+  </previews>
+
+  <model>
+    <path archive="y">Aircraft/ercoupe/Models/ercoupe.xml</path>
+    <livery>
+      <file type="string">gray</file>
+    </livery>
+  </model>
 
   <systems>
     <electrical>
@@ -207,6 +225,7 @@ Using David Megginson's 172P as a starting point.
     <file>Aircraft/ercoupe/Nasal/ercoupe.nas</file>
     <file>Aircraft/ercoupe/Nasal/Electrical.nas</file>
     <file>Aircraft/ercoupe/Nasal/liveries.nas</file> 
+    <file>Aircraft/ercoupe/Nasal/rain.nas</file>
   </ercoupe>
  </nasal>
  <payload>

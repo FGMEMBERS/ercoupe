@@ -4,6 +4,27 @@
 
  <path>ercoupe.ac</path>
 
+ <model>
+  <name>LeftYoke</name>
+  <path>Yoke.xml</path>
+  <offsets>
+   <x-m>-0.551</x-m>
+   <y-m>-0.273</y-m>
+   <z-m> 0.559</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>RightYoke</name>
+  <path>Yoke.xml</path>
+  <offsets>
+   <x-m>-0.551</x-m>
+   <y-m> 0.261</y-m>
+   <z-m> 0.559</z-m>
+  </offsets>
+ </model>
+
+
 <!--
  <model>
   <name>Pilot</name>
@@ -70,10 +91,10 @@
   </effect>
 
 <!-- glass effect -->
-  <!-- glass effects -->
   <effect>
     <inherits-from>Aircraft/ercoupe/Models/Effects/glass/glass</inherits-from>
     <object-name>WindscreenI</object-name>
+    <object-name>RearWindowI</object-name>
     <object-name>RWindowI</object-name>
     <object-name>LWindowI</object-name>
   </effect>
@@ -81,6 +102,7 @@
   <effect>
     <inherits-from>Aircraft/ercoupe/Models/Effects/glass/reflection</inherits-from>
     <object-name>WindscreenO</object-name>
+    <object-name>RearWindowO</object-name>
     <object-name>RWindowO</object-name>
     <object-name>LWindowO</object-name>
   </effect>
@@ -273,73 +295,6 @@
   <object-name>ElectronicsLabels</object-name>
   <object-name>ElectronicsLabels2</object-name>
 -->
- </animation>
-
-<!-- <animation>
-  <name>ControlsGroup</name>
-  <object-name>PanelInstruments</object-name>
-  <object-name>ElectronicsGroup</object-name>
-  <object-name>LeftYoke</object-name>
-  <object-name>RightYoke</object-name>
-  <object-name>CarbHeatGroup</object-name>
-  <object-name>ThrottleGroup</object-name>
-  <object-name>MixtureGroup</object-name>
-  <object-name>FlapSwitchGroup</object-name>
-  <object-name>TrimWheel</object-name>
- </animation> -->
-
-<!-- <animation>
-  <type>range</type>
-  <object-name>ControlsGroup</object-name>
-  <min-m>0</min-m>
-  <max-m>10.0</max-m>
- </animation> -->
-
- <animation>
-  <type>translate</type>
-  <object-name>LeftYoke</object-name>
-  <object-name>RightYoke</object-name>
-  <property>controls/flight/elevator</property>
-  <factor>-0.1</factor>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
-
- <animation>
-  <type>rotate</type>
-  <object-name>LeftYoke</object-name>
-  <property>controls/flight/aileron</property>
-  <factor>-45</factor>
-  <center>
-   <x-m>-0.451</x-m>
-   <y-m>-0.2729</y-m>
-   <z-m> 0.5171</z-m>
-  </center>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
-
- <animation>
-  <type>rotate</type>
-  <object-name>RightYoke</object-name>
-  <property>controls/flight/aileron</property>
-  <factor>-45</factor>
-  <center>
-   <x-m>-0.451</x-m>
-   <y-m>0.26129</y-m>
-   <z-m> 0.5181</z-m>
-  </center>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
  </animation>
 
  <animation>
