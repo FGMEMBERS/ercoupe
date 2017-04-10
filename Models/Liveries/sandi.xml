@@ -4,11 +4,12 @@
   <sim>
     <model>
       <livery>
-        <name type="string">sandi</name>
-        <texture>Liveries/ercoupe-ext2-sandi.rgb</texture>
+        <name type="string">Champagne</name>
+        <texture>Liveries/ercoupe-ext2-sandi.png</texture>
+        <shininess type="float">-0.65</shininess>
       </livery>
       <livery-wings>
-        <texture>Liveries/c150-02-sandi.rgb</texture>
+        <texture>Liveries/c150-02-sandi.png</texture>
       </livery-wings>
     </model>
   </sim>

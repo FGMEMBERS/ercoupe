@@ -4,8 +4,9 @@
   <sim>
     <model>
       <livery>
-        <name type="string">gray</name>
+        <name type="string">Polished Aluminium</name>
         <texture>ercoupe-ext2.rgb</texture>
+        <shininess type="float">-0.45</shininess>
       </livery>
       <livery-wings>
         <texture>c150-02.rgb</texture>

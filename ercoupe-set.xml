@@ -63,6 +63,7 @@ Using David Megginson's 172P as a starting point.
     <path archive="y">Aircraft/ercoupe/Models/ercoupe.xml</path>
     <livery>
       <file type="string">gray</file>
+      <shininess type="float">-0.75</shininess>
     </livery>
   </model>
 
