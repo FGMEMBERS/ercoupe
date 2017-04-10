@@ -180,15 +180,17 @@
  </model>
 
 <!-- Pilot Side -->
+<!--
  <model>
   <name>Attitude</name>
   <path>Aircraft/ercoupe/Models/Instruments/AI/AI.xml</path>
   <offsets>
-   <x-m>-0.497</x-m>
+   <x-m>-0.471</x-m>
    <y-m>-0.2671</y-m>
    <z-m> 0.6493</z-m>
   </offsets>
  </model>
+-->
  <model>
   <name>RPM</name>
   <path>Aircraft/ercoupe/Models/Instruments/RPM/RPM.xml</path>
@@ -258,31 +260,7 @@
   </offsets>
  </model>
 
- <animation>
-  <name>CarbHeatGroup</name>
-  <object-name>CarbHeat</object-name>
-  <object-name>CarbHeatBack</object-name>
-  <object-name>CarbHeatRod</object-name>
- </animation>
-
- <!--animation>
-  <name>ThrottleGroup</name>
-  <object-name>Throttle</object-name>
-  <object-name>ThrottleRod</object-name>
- </animation-->
-
- <!--animation>
-  <name>MixtureGroup</name>
-  <object-name>Mixture</object-name>
-  <object-name>MixtureRod</object-name>
- </animation-->
-
- <!-- animation>
-  < name>FlapSwitchGroup</name>
-  <object-name>FlapSwitch</object-name>
-  <object-name>FlapSwitchRod</object-name>
- </animation -->
-
+<!--
  <animation>
   <name>ElectronicsGroup</name>
   <object-name>TaxiLightSwitch</object-name>
@@ -291,15 +269,12 @@
   <object-name>NavLightSwitch</object-name>
   <object-name>BeaconSwitch</object-name>
   <object-name>StrobeSwitch</object-name>
-<!--
-  <object-name>ElectronicsLabels</object-name>
-  <object-name>ElectronicsLabels2</object-name>
--->
  </animation>
+-->
 
  <animation>
   <type>translate</type>
-  <object-name>ThrottleGroup</object-name>
+  <object-name>Throttle</object-name>
   <property>controls/engines/engine[0]/throttle</property>
   <factor>-0.10</factor>
   <axis>
@@ -311,7 +286,7 @@
 
  <animation>
   <type>translate</type>
-  <object-name>CarbHeatGroup</object-name>
+  <object-name>CarbHeat</object-name>
   <property>controls/anti-ice/engine[0]/carb-heat</property>
   <factor>-0.04</factor>
   <axis>
@@ -323,7 +298,7 @@
 
  <animation>
   <type>translate</type>
-  <object-name>MixtureGroup</object-name>
+  <object-name>Mixture</object-name>
   <property>controls/engines/engine[0]/mixture</property>
   <factor>-0.10</factor>
   <axis>
@@ -345,43 +320,7 @@
   </axis>
  </animation>
 
- <!--
- <animation>
-  <type>rotate</type>
-  <property>controls/flight/flaps</property>
-  <object-name>FlapSwitchGroup</object-name>
-  <factor>60</factor>
-  <offset-deg>-30</offset-deg>
-  <axis>
-   <x>0.0</x>
-   <y>1.0</y>
-   <z>0.0</z>
-  </axis>
-  <center>
-   <x-m>-0.39</x-m>
-   <y-m>0.19</y-m>
-   <z-m>-0.25</z-m>
-  </center>
- </animation>  
- -->
-
- <!-- animation>
-  <type>rotate</type>
-  <object-name>TrimWheel</object-name>
-  <property>controls/flight/elevator-trim</property>
-  <factor>-360</factor>
-  <axis>
-   <x>0.0</x>
-   <y>1.0</y>
-   <z>0.0</z>
-  </axis>
-  <center>
-   <x-m>-0.41</x-m>
-   <y-m>-0.04</y-m>
-   <z-m>-0.46</z-m>
-  </center>
- </animation -->  
-
+<!--
  <animation>
   <type>rotate</type>
   <object-name>TaxiLightSwitch</object-name>
@@ -432,6 +371,7 @@
    <z-m>-0.269</z-m>
   </center>
  </animation>
+-->
 
  <animation>
   <type>rotate</type>
@@ -450,6 +390,7 @@
   </center>
  </animation>
 
+<!--
  <animation>
   <type>rotate</type>
   <object-name>BeaconSwitch</object-name>
@@ -483,7 +424,10 @@
    <z-m>-0.269</z-m>
   </center>
  </animation>
+-->
+
 <!-- FIX ME! -->
+<!--
  <animation>
   <type>rotate</type>
   <object-name>AvionicsSwitch</object-name>
@@ -517,6 +461,7 @@
    <z-m>0.525</z-m>
   </center>
  </animation>
+-->
 
  <!-- Interior -->
 
@@ -529,6 +474,11 @@
   <!-- object-name>BackSeat</object-name -->
   <object-name>MagCompass</object-name>
  </animation>
+
+ <effect>
+    <inherits-from>Aircraft/ercoupe/Models/Effects/interior</inherits-from>
+    <object-name>InteriorGroup</object-name>
+  </effect>
 
  <animation>
   <type>range</type>
