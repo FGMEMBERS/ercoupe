@@ -52,7 +52,7 @@
     <object-name>Fuselage</object-name>
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>ercoupe-ext2.rgb</texture>
+    <texture>ercoupe-ext2.png</texture>
   </animation>
 
   <animation>
@@ -68,7 +68,7 @@
     <object-name>Rudder.b</object-name>
     <property-base>sim/model/livery-wings</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>c150-02.rgb</texture>
+    <texture>c150-02.png</texture>
   </animation>
 
 <!--  Reflection effect -->

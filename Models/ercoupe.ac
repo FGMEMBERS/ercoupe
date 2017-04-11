@@ -18075,7 +18075,7 @@ name "paneltop_1_0"
 loc -0.755976 0.598753 -0.000267029
 data 8
 Mesh.158
-texture "c150-int.rgb"
+texture "c150-int.png"
 crease 55.000000
 numvert 69
 0.228653 -0.0377711 -0.501194
@@ -18613,7 +18613,7 @@ OBJECT poly
 name "parkBrake_0"
 data 8
 Mesh.048
-texture "c150-int.rgb"
+texture "c150-int.png"
 crease 80.000000
 numvert 9
 -0.602617 0.511689 0.035523
@@ -18685,7 +18685,6 @@ OBJECT poly
 name "parkBrake_1"
 data 8
 Mesh.006
-texture "ercoupe-int2.rgb"
 crease 64.000000
 numvert 95
 -0.471725 0.525385 0.033672
@@ -26354,7 +26353,7 @@ kids 0
 OBJECT poly
 name "Rudder.b"
 loc 4.11563 0.628321 -1.16852
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 90.000000
 numvert 42
 -0.158194 0.00266671 0.01793
@@ -26884,7 +26883,7 @@ kids 0
 OBJECT poly
 name "VTail"
 loc 4.01048 0.628369 -1.16852
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 90.000000
 numvert 47
 -0.05301 -0.511082 0
@@ -27375,7 +27374,7 @@ OBJECT poly
 name "Elevator"
 data 8
 Mesh.100
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 10
 4.2868 0.591382 1.17203
@@ -27502,7 +27501,7 @@ name "Fuselage"
 loc 2.98023e-08 0 -2.44992e-11
 data 8
 Mesh.022
-texture "ercoupe-ext2.rgb"
+texture "ercoupe-ext2.png"
 crease 55.000000
 numvert 456
 -0.31834 0.95832 -0.396203
@@ -31703,7 +31702,7 @@ OBJECT poly
 name "HTail"
 data 8
 Mesh.013
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 49
 3.79085 0.605731 -1.1662
@@ -32315,7 +32314,7 @@ OBJECT poly
 name "HTail_0"
 data 8
 Mesh.012
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 8
 3.88821 0.610123 -1.11057
@@ -32364,7 +32363,7 @@ OBJECT poly
 name "FLdamper"
 data 8
 Mesh.125
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 80.000000
 numvert 32
 -1.34777 -0.403028 -0.009207
@@ -32651,7 +32650,7 @@ OBJECT poly
 name "FUdamper"
 data 8
 Mesh.126
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 80.000000
 numvert 24
 -1.23813 -0.304123 -0.007882
@@ -32842,7 +32841,7 @@ OBJECT poly
 name "NoseStrutPart"
 data 8
 Mesh.128
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 42
 -1.28608 -0.199312 0.024603
@@ -33221,7 +33220,7 @@ OBJECT poly
 name "NoseWheel"
 data 8
 Mesh.129
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 80.000000
 numvert 130
 -1.46442 -0.612418 0.039219
@@ -34816,7 +34815,7 @@ OBJECT poly
 name "NoseWheelPart"
 data 8
 Mesh.127
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 80.000000
 numvert 128
 -1.38593 -0.429175 -0.000171
@@ -36099,7 +36098,7 @@ OBJECT poly
 name "object.003"
 data 8
 Mesh.130
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 34
 -1.33202 -0.143861 2.6e-05
@@ -38799,7 +38798,7 @@ OBJECT poly
 name "LeftWheel"
 data 8
 Mesh.120
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 80.000000
 numvert 130
 -0.046786 -0.567522 1.12182
@@ -40400,7 +40399,7 @@ OBJECT poly
 name "LAileron"
 data 8
 Mesh.001
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 35
 0.676395 0.000129 1.08062
@@ -40640,7 +40639,7 @@ OBJECT poly
 name "LeftAileron_1_1_0"
 data 8
 Mesh.014
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 3
 0.461104 0.313464 3.58733
@@ -43107,7 +43106,7 @@ OBJECT poly
 name "RightWheel"
 data 8
 Mesh.124
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 80.000000
 numvert 130
 -0.047603 -0.56888 -1.12366
@@ -44705,7 +44704,7 @@ OBJECT poly
 name "RAileron"
 data 8
 Mesh.015
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 36
 0.673558 0.000466 -1.07283
@@ -44962,7 +44961,7 @@ OBJECT poly
 name "LWing"
 data 8
 Mesh.172
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 251
 -0.062795 -0.243346 0.991189
@@ -47026,7 +47025,7 @@ OBJECT poly
 name "RWing"
 data 8
 Mesh.168
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 202
 -0.148372 -0.038134 -1.00083
@@ -50606,7 +50605,7 @@ name "cabin_1_0_1"
 loc 3.04039e-08 1.18243e-08 -2.44992e-11
 data 4
 Mesh
-texture "ercoupe-cab.rgb"
+texture "ercoupe-cab.png"
 crease 55.000000
 numvert 126
 0.611559 0.606414 0.464056
@@ -51613,7 +51612,7 @@ OBJECT poly
 name "Cylinder"
 data 12
 Cylinder.004
-texture "ercoupe-ext2.rgb"
+texture "ercoupe-ext2.png"
 crease 30.000000
 numvert 14
 -0.855405 -0.130962 -0.026852
@@ -51750,7 +51749,7 @@ OBJECT poly
 name "ELT"
 data 8
 Mesh.152
-texture "c150-obj.rgb"
+texture "c150-obj.png"
 crease 55.000000
 numvert 128
 0.609554 0.627907 0.35124
@@ -52634,7 +52633,7 @@ OBJECT poly
 name "Hub"
 data 8
 Mesh.025
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 80.000000
 numvert 97
 -1.74613 0.447352 -0.072266
@@ -53476,7 +53475,7 @@ OBJECT poly
 name "LeftNavLight"
 data 8
 Mesh.064
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 33
 -0.026311 0.390954 4.56033
@@ -53734,7 +53733,7 @@ OBJECT poly
 name "Propeller"
 data 8
 Mesh.027
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 121
 -1.99808 0.718804 0.306641
@@ -55106,7 +55105,7 @@ OBJECT poly
 name "RightNavLight"
 data 8
 Mesh.065
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 33
 0.033072 0.414514 -4.56753
@@ -56680,7 +56679,7 @@ OBJECT poly
 name "fuelswitch"
 data 8
 Mesh.082
-texture "c150-int2.rgb"
+texture "c150-int2.png"
 crease 55.000000
 numvert 22
 -0.059785 0.031678 -0.008119
@@ -56836,7 +56835,7 @@ OBJECT poly
 name "gascap-left"
 data 8
 Mesh.174
-texture "ercoupe-ext1.rgb"
+texture "ercoupe-ext2.png"
 crease 55.000000
 numvert 27
 -1.02375 0.754712 -0.003597
@@ -57040,7 +57039,7 @@ OBJECT poly
 name "gascap-left.001"
 data 8
 Mesh.175
-texture "ercoupe-ext1.rgb"
+texture "ercoupe-ext2.png"
 crease 55.000000
 numvert 27
 -0.288547 0.130478 0.992465
@@ -57244,7 +57243,7 @@ OBJECT poly
 name "gascap-right"
 data 8
 Mesh.176
-texture "ercoupe-ext1.rgb"
+texture "ercoupe-ext2.png"
 crease 55.000000
 numvert 27
 -0.288547 0.121389 -0.996063
@@ -57448,7 +57447,7 @@ OBJECT poly
 name "ground"
 data 8
 Mesh.177
-texture "ercoupe-cab.rgb"
+texture "ercoupe-cab.png"
 crease 45.000000
 numvert 18
 1.36519 0.050836 0.287109
@@ -57571,7 +57570,7 @@ OBJECT poly
 name "pitot"
 data 8
 Mesh.154
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 70.000000
 numvert 28
 -0.398861 -0.148206 1.43133
@@ -57752,7 +57751,7 @@ OBJECT poly
 name "rect"
 data 8
 Mesh.081
-texture "c150-int2.rgb"
+texture "c150-int2.png"
 crease 55.000000
 numvert 4
 -0.123068 0.023414 -0.02465
@@ -57771,7 +57770,7 @@ kids 0
 OBJECT poly
 name "VTail"
 loc 4.01047 0.628329 1.17376
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 90.000000
 numvert 47
 -0.0530095 -0.474263 0.0179127
@@ -67904,7 +67903,7 @@ kids 0
 OBJECT poly
 name "Rudder.a"
 loc 4.11563 0.62828 1.17376
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 90.000000
 numvert 42
 0.158193 0.00261295 0.01793
@@ -69709,7 +69708,7 @@ OBJECT poly
 name "LWindow_1"
 data 8
 Cube.008
-texture "ercoupe-ext2.rgb"
+texture "ercoupe-ext2.png"
 crease 55.000000
 numvert 8
 0.265023 1.09182 -0.000397
@@ -69925,7 +69924,7 @@ OBJECT poly
 name "LWindow_1"
 data 8
 Cube.008
-texture "ercoupe-ext2.rgb"
+texture "ercoupe-ext2.png"
 crease 55.000000
 numvert 8
 -0.339227 1.0911 0.020548
@@ -70165,7 +70164,7 @@ OBJECT poly
 name "RWindow_1"
 data 8
 Cube.010
-texture "ercoupe-ext2.rgb"
+texture "ercoupe-ext2.png"
 crease 30.000000
 numvert 8
 -0.33733 1.09142 -0.001146
@@ -70387,7 +70386,7 @@ OBJECT poly
 name "RWindow_1"
 data 8
 Cube.010
-texture "ercoupe-ext2.rgb"
+texture "ercoupe-ext2.png"
 crease 30.000000
 numvert 8
 0.267011 1.09089 -0.019364
@@ -70432,7 +70431,7 @@ OBJECT poly
 name "Propeller.Fast"
 data 8
 Mesh.131
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 36
 -1.99782 0.436005 0
@@ -70621,7 +70620,7 @@ OBJECT poly
 name "Propeller.Slow"
 data 8
 Mesh.132
-texture "c150-02.rgb"
+texture "c150-02.png"
 crease 55.000000
 numvert 10
 -1.99782 -0.214533 -0.650538

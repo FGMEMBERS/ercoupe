@@ -44,7 +44,6 @@ Using David Megginson's 172P as a starting point.
   <aero archive="y">ercoupe</aero>
 
   <startup>
-<!-- <splash-texture>Aircraft/ercoupe/ercoupe-splash.rgb</splash-texture> -->
   </startup>
   <previews>
     <preview>

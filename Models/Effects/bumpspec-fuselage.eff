@@ -5,7 +5,7 @@
   <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec</inherits-from>
   <parameters>
     <texture n="2">
-      <image>Aircraft/ercoupe/Models/ercoupe-ext2n.rgb</image>
+      <image>Aircraft/ercoupe/Models/ercoupe-ext2n.png</image>
       <filter>linear-mipmap-linear</filter>
       <wrap-s>clamp</wrap-s>
       <wrap-t>clamp</wrap-t>
