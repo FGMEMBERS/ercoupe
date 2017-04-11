@@ -3,6 +3,9 @@
 <PropertyList>
 
  <path>ercoupe.ac</path>
+ <offsets>
+    <x-m>-.27</x-m>
+  </offsets>
 
  <model>
   <name>LeftYoke</name>
