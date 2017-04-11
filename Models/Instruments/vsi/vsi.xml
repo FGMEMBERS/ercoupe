@@ -2,17 +2,25 @@
 
 <PropertyList>
 
- <path>VSI.ac</path>
+ <path>vsi.ac</path>
+
+ <effect>
+  <inherits-from>Aircraft/c150/Models/Effects/interior/flashlight</inherits-from>
+  <object-name>Face</object-name>
+  <object-name>PointerTip</object-name>
+  <object-name>PointerCentre</object-name>
+  <object-name>PointerTip</object-name>
+ </effect>
 
  <animation>
   <type>material</type>
   <object-name>Face</object-name>
-  <object-name>PointerTip</object-name>   
+  <object-name>PointerTip</object-name>
   <emission>
    <red>1.0</red>
    <green>0.2</green>
    <blue>0.0</blue>
-   <factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+   <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
   </emission>
  </animation>
 

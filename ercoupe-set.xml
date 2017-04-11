@@ -18,14 +18,14 @@ Using David Megginson's 172P as a starting point.
   <longdescription>
    The ERCO Ercoupe is a low-wing monoplane aircraft that was designed and built in the United States. It was first manufactured by the Engineering and Research Corporation (ERCO) shortly before World War II; several other manufacturers continued its production after the war. It was designed to be the safest fixed-wing aircraft that aerospace engineering could provide at the time.
   </longdescription>
-  <author>Erik Hofman, Ron Jensen (FDM 3d Model), pab (3d Model)</author>
+  <author>Erik Hofman, Ron Jensen (FDM and 3d Model), pab (3d Model), Harald Johnsen (Cockpit)</author>
   <status>beta</status>
 
   <rating>
-    <FDM type="int">4</FDM>
-    <systems type="int">4</systems>
-    <cockpit type="int">4</cockpit>
-    <model type="int">4</model>
+    <FDM type="int">5</FDM>
+    <systems type="int">3</systems>
+    <cockpit type="int">5</cockpit>
+    <model type="int">5</model>
   </rating>
   <tags>
     <tag>ecro</tag>

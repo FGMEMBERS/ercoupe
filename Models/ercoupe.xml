@@ -123,45 +123,37 @@
   <name>ASI</name>
   <path>Aircraft/ercoupe/Models/Instruments/ASI/asi.xml</path>
   <offsets>
-   <x-m>-0.497</x-m>
-   <y-m>-0.1083</y-m>
-   <z-m> 0.719</z-m>
+   <x-m>-0.490</x-m>
+   <y-m>-0.1084</y-m>
+   <z-m> 0.7218</z-m>
   </offsets>
  </model>
 
  <model>
   <name>Altimeter</name>
-  <path>Aircraft/ercoupe/Models/Instruments/Altimeter/Altimeter.xml</path>
+  <path>Aircraft/ercoupe/Models/Instruments/alt/alt.xml</path>
   <offsets>
    <x-m>-0.497</x-m>
    <y-m>-0.0093</y-m>
-   <z-m> 0.731</z-m>
+   <z-m> 0.734</z-m>
   </offsets>
  </model>
 
- <model>
-  <name>VSI</name>
-  <path>Aircraft/ercoupe/Models/Instruments/VSI/VSI.xml</path>
-  <offsets>
-   <x-m>-0.497</x-m>
-   <y-m> 0.091</y-m>
-   <z-m> 0.7194</z-m>
-  </offsets>
- </model>
 <!-- Bottom Row -->
  <model>
   <name>OBI</name>
-  <path>Aircraft/ercoupe/Models/Instruments/KI204/KI204.xml</path>
+<!--  <path>Aircraft/ercoupe/Models/Instruments/KI204/KI204.xml</path> -->
+  <path>Aircraft/ercoupe/Models/Instruments/hdg/hdg.xml</path>
   <offsets>
-   <x-m>-0.497</x-m>
+   <x-m>-0.495</x-m>
    <y-m>-0.1072</y-m>
-   <z-m> 0.6327</z-m>
+   <z-m> 0.6357</z-m>
   </offsets>
  </model>
 
  <model>
   <name>Turn and Bank</name>
-  <path>Aircraft/ercoupe/Models/Instruments/Turn/Turn.xml</path>
+  <path>Aircraft/ercoupe/Models/Instruments/tc/tc.xml</path>
   <offsets>
    <x-m>-0.497</x-m>
    <y-m>-0.0093</y-m>
@@ -170,34 +162,34 @@
  </model>
 
  <model>
+  <name>VSI</name>
+  <path>Aircraft/ercoupe/Models/Instruments/vsi/vsi.xml</path>
+  <offsets>
+   <x-m>-0.497</x-m>
+   <y-m> 0.0911</y-m>
+   <z-m> 0.6370</z-m>
+  </offsets>
+ </model>
+<!--
+ <model>
   <name>GMeter</name>
   <path>Aircraft/ercoupe/Models/Instruments/GMeter/GMeter.xml</path>
   <offsets>
    <x-m>-0.497</x-m>
    <y-m> 0.091</y-m>
-   <z-m> 0.6343</z-m>
-  </offsets>
- </model>
-
-<!-- Pilot Side -->
-<!--
- <model>
-  <name>Attitude</name>
-  <path>Aircraft/ercoupe/Models/Instruments/AI/AI.xml</path>
-  <offsets>
-   <x-m>-0.471</x-m>
-   <y-m>-0.2671</y-m>
-   <z-m> 0.6493</z-m>
+   <z-m> 0.6343</z-m><z-m> 0.6357</z-m>
   </offsets>
  </model>
 -->
+
+<!-- Pilot Side -->
  <model>
   <name>RPM</name>
-  <path>Aircraft/ercoupe/Models/Instruments/RPM/RPM.xml</path>
+  <path>Aircraft/ercoupe/Models/Instruments/rpm/rpm.xml</path>
   <offsets>
-   <x-m>-0.497</x-m>
+   <x-m>-0.505</x-m>
    <y-m>-0.3602</y-m>
-   <z-m> 0.6471</z-m>
+   <z-m> 0.6499</z-m>
   </offsets>
  </model>
 
@@ -208,15 +200,6 @@
    <x-m>-0.491</x-m>
    <y-m>-0.1</y-m>
    <z-m> 0.5525</z-m>
-  </offsets>
- </model>
- <model>
-  <name>MagCompass</name>
-  <path>Aircraft/ercoupe/Models/Instruments/MagneticCompass/MagneticCompass.xml</path>
-  <offsets>
-   <x-m>-0.543</x-m>
-   <y-m>0.00</y-m>
-   <z-m>0.837</z-m>
   </offsets>
  </model>
 <!--
