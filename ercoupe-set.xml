@@ -56,6 +56,11 @@ Using David Megginson's 172P as a starting point.
       <path>Preview/ercoupe2.jpg</path>
       <splash type="bool">true</splash>
     </preview>
+    <preview>
+      <type>panel</type>
+      <path>Preview/ercoupe_int.jpg</path>
+      <splash type="bool">false</splash>
+    </preview>
   </previews>
 
   <model>
