@@ -822,27 +822,6 @@
 
   <axis name="YAW">
 
-    <!-- Stall initiator -->
-    <function name="aero/moment/Yaw_alpha">
-       <description>Yaw moment due to alpha</description>
-       <product>
-           <property>aero/qbar-psf</property>
-           <property>metrics/Sw-sqft</property>
-           <property>metrics/bw-ft</property>
-           <property>aero/alpha-rad</property>
-           <property>fcs/gear-no-wow</property>
-           <table>
-             <independentVar lookup="row">aero/beta-rad</independentVar>
-             <independentVar lookup="column">aero/Re</independentVar>
-             <tableData>
-                          2292379  2521617
-                 -0.3491  -1.0000   0.0000
-                  0.3491   1.0000   0.0000
-             </tableData>
-           </table>
-       </product>
-    </function>
-
     <function name="aero/moment/Yaw_beta">
        <description>Yaw moment due to beta</description>
        <product>
