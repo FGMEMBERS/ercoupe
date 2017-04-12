@@ -136,16 +136,38 @@
   <name>Altimeter</name>
   <path>Aircraft/ercoupe/Models/Instruments/alt/alt.xml</path>
   <offsets>
-   <x-m>-0.497</x-m>
-   <y-m>-0.0093</y-m>
-   <z-m> 0.734</z-m>
+   <x-m>-0.49645</x-m>
+   <y-m> 0.09112</y-m>
+   <z-m> 0.7222</z-m>
   </offsets>
  </model>
 
 <!-- Bottom Row -->
+
+<!--
+ <model>
+  <name>OilPres</name>
+  <path>Aircraft/ercoupe/Models/Instruments/oil/OilPress.xml</path>
+  <offsets>
+   <x-m>-0.495</x-m>
+   <y-m>-0.1472</y-m>
+   <z-m> 0.5557</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>OilTemp</name>
+  <path>Aircraft/ercoupe/Models/Instruments/oil/OilTemp.xml</path>
+  <offsets>
+   <x-m>-0.495</x-m>
+   <y-m>-0.1272</y-m>
+   <z-m> 0.5557</z-m>
+  </offsets>
+ </model>
+-->
+
  <model>
   <name>OBI</name>
-<!--  <path>Aircraft/ercoupe/Models/Instruments/KI204/KI204.xml</path> -->
   <path>Aircraft/ercoupe/Models/Instruments/hdg/hdg.xml</path>
   <offsets>
    <x-m>-0.495</x-m>
@@ -173,17 +195,6 @@
    <z-m> 0.6370</z-m>
   </offsets>
  </model>
-<!--
- <model>
-  <name>GMeter</name>
-  <path>Aircraft/ercoupe/Models/Instruments/GMeter/GMeter.xml</path>
-  <offsets>
-   <x-m>-0.497</x-m>
-   <y-m> 0.091</y-m>
-   <z-m> 0.6343</z-m><z-m> 0.6357</z-m>
-  </offsets>
- </model>
--->
 
 <!-- Pilot Side -->
  <model>
@@ -196,6 +207,7 @@
   </offsets>
  </model>
 
+<!--
  <model>
   <name>Master Fuel Switch</name>
   <path>Aircraft/ercoupe/Models/Instruments/FuelSwitch/fuelswitch.xml</path>
@@ -205,6 +217,28 @@
    <z-m> 0.5525</z-m>
   </offsets>
  </model>
+-->
+
+ <model>
+  <name>placard</name>
+  <path>Aircraft/ercoupe/Models/Instruments/placard.ac</path>
+  <offsets>
+   <x-m>-0.4874</x-m>
+   <y-m> 0.3578</y-m>
+   <z-m> 0.6443</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Ampmeter</name>
+  <path>Aircraft/ercoupe/Models/Instruments/ammeter/ammeter.xml</path>
+  <offsets>
+   <x-m>-0.502</x-m>
+   <y-m> 0.4289</y-m>
+   <z-m> 0.5815</z-m>
+  </offsets>
+ </model>
+
 <!--
  <model>
   <name>testing</name>
@@ -458,7 +492,7 @@
   <object-name>PilotSeat</object-name>
   <object-name>CopilotSeat</object-name>
   <!-- object-name>BackSeat</object-name -->
-  <object-name>MagCompass</object-name>
+  <!-- <object-name>MagCompass</object-name> -->
  </animation>
 
  <effect>
@@ -864,59 +898,6 @@
    <z2-m>0.052</z2-m>
   </axis>
  </animation>
-
- <!--
- <animation>
-  <type>translate</type>
-  <object-name>LeftFlap</object-name>
-  <object-name>RightFlap</object-name>
-  <property>surface-positions/flap-pos-norm</property>
-  <factor>0.15</factor>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.2</z>
-  </axis>
- </animation>
- -->
-
- <!--
- <animation>
-  <type>rotate</type>
-  <object-name>LeftFlap</object-name>
-  <property>surface-positions/flap-pos-norm</property>
-  <factor>30</factor>
-  <center>
-   <x-m>0.76</x-m>
-   <y-m>-0.53</y-m>
-   <z-m>0.32</z-m>
-  </center>
-  <axis>
-   <x>0.0</x>
-   <y>1.0</y>
-   <z>-0.1</z>
-  </axis>
- </animation>
- -->
- 
- <!--
- <animation>
-  <type>rotate</type>
-  <object-name>RightFlap</object-name>
-  <property>surface-positions/flap-pos-norm</property>
-  <factor>30</factor>
-  <center>
-   <x-m>0.76</x-m>
-   <y-m>-0.53</y-m>
-   <z-m>0.32</z-m>
-  </center>
-  <axis>
-   <x>0.0</x>
-   <y>1.0</y>
-   <z>0.1</z>
-  </axis>
- </animation>
- -->
 
  <animation>
   <type>rotate</type>
