@@ -93,6 +93,12 @@
     <object-name>Rudder.b</object-name>
   </effect>
 
+<!-- interior shadow -->
+  <effect>
+    <inherits-from>Aircraft/ercoupe/Models/Effects/shadow</inherits-from>
+    <object-name>interior</object-name>
+  </effect>
+
 <!-- glass effect -->
   <effect>
     <inherits-from>Aircraft/ercoupe/Models/Effects/glass/glass</inherits-from>
