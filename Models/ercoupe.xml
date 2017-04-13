@@ -302,7 +302,7 @@
   <type>translate</type>
   <object-name>Throttle</object-name>
   <property>controls/engines/engine[0]/throttle</property>
-  <factor>-0.10</factor>
+  <factor>-0.08</factor>
   <axis>
    <x>1.0</x>
    <y>0.0</y>
