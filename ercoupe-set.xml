@@ -228,6 +228,7 @@ Using David Megginson's 172P as a starting point.
   <ercoupe>
     <file>Aircraft/ercoupe/Nasal/ercoupe.nas</file>
     <file>Aircraft/ercoupe/Nasal/Electrical.nas</file>
+    <file>Aircraft/ercoupe/Nasal/engine.nas</file>
     <file>Aircraft/ercoupe/Nasal/liveries.nas</file> 
     <file>Aircraft/ercoupe/Nasal/rain.nas</file>
   </ercoupe>
