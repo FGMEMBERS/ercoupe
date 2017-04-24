@@ -156,6 +156,7 @@
   </offsets>
  </model>
 
+<!--
  <model>
   <name>Window-open-close</name>
   <path>Aircraft/ercoupe/Models/Instruments/CabinWindowsControl/CabinWindowsControl.xml</path>
@@ -165,6 +166,7 @@
    <z-m> 0.62</z-m>
   </offsets>
  </model>
+-->
 
  <animation>
   <type>translate</type>

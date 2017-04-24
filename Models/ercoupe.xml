@@ -65,6 +65,8 @@
   <animation>
     <type>material</type>
     <object-name>Fuselage</object-name>
+    <object-name>WindowFrameLeft</object-name>
+    <object-name>WindowFrameRight</object-name>
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>ercoupe-ext2.png</texture>
@@ -137,16 +139,6 @@
    <x-m>-1.02374</x-m>
    <y-m> 0.0</y-m>
    <z-m> 0.740649</z-m>
-  </offsets>
- </model>
-
- <model>
-  <name>Window-open-close</name>
-  <path>Aircraft/ercoupe/Models/Instruments/CabinWindowsControl/CabinWindowsControl.xml</path>
-  <offsets>
-   <x-m>-0.28</x-m>
-   <y-m>-0.474</y-m>
-   <z-m> 0.62</z-m>
   </offsets>
  </model>
 
@@ -651,8 +643,8 @@
  <animation>
   <type>rotate</type>
   <object-name>RWindow</object-name>
-   <property>surface-positions/speedbrake-pos-norm</property>
-  <factor>-90</factor>
+   <property>surface-positions/window-pos-norm</property>
+  <factor>-88.5</factor>
   <center>
    <x-m>-0.0</x-m>
    <y-m> 0.0</y-m>
@@ -667,8 +659,8 @@
  <animation>
   <type>rotate</type>
   <object-name>LWindow</object-name>
-   <property>surface-positions/speedbrake-pos-norm</property>
-  <factor>90</factor>
+   <property>surface-positions/window-pos-norm</property>
+  <factor>88.5</factor>
   <center>
    <x-m>-0.0</x-m>
    <y-m> 0.0</y-m>
@@ -679,6 +671,36 @@
    <y>0.0</y>
    <z>0.0</z>
   </axis>
+ </animation>
+ <animation>
+  <type>slider</type>
+  <object-name>WindowFrameLeft</object-name>
+  <drag-direction>vertical</drag-direction>
+  <value>0.0</value>
+  <action>
+   <binding>
+    <command>property-adjust</command>
+    <property>surface-positions/window-pos-norm</property>
+    <factor>-0.05</factor>
+    <min>0.0</min>
+    <max>1.0</max>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>slider</type>
+  <object-name>WindowFrameRight</object-name>
+  <drag-direction>vertical</drag-direction>
+  <value>0.0</value>
+  <action>
+   <binding>
+    <command>property-adjust</command>
+    <property>surface-positions/window-pos-norm</property>
+    <factor>-0.05</factor>
+    <min>0.0</min>
+    <max>1.0</max>
+   </binding>
+  </action>
  </animation>
 
 </PropertyList>

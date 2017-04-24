@@ -532,12 +532,12 @@
        </product>
     </function>
 
-    <function name="aero/coefficient/Drag_speedbrake">
+    <function name="aero/force/Drag_speedbrake">
        <description>Drag_due_to_speedbrakes</description>
          <product>
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
-           <property>fcs/speedbrake-pos-norm</property>
+           <property>/surface-positions/window-pos-norm</property>
            <value>0.007</value>
          </product>
     </function>
@@ -807,7 +807,7 @@
        </product>
     </function>
 
-    <function name="aero/coefficient/Roll_rudder">
+    <function name="aero/moment/Roll_rudder">
        <description>Roll_moment_due_to_rudder</description>
        <product>
            <property>aero/qbar-psf</property>
@@ -876,7 +876,7 @@
        </product>
     </function>
 
-    <function name="aero/coefficient/Yaw_rudder">
+    <function name="aero/moment/Yaw_rudder">
        <description>Yaw_moment_due_to_rudder</description>
        <product>
            <property>aero/qbar-psf</property>
