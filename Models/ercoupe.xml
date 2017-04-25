@@ -5,6 +5,7 @@
  <path>ercoupe.ac</path>
  <offsets>
     <x-m>-.27</x-m>
+    <z-m>-0.18</z-m>
  </offsets>
 
  <model>
@@ -292,8 +293,8 @@
    <z>0.96363045</z>
   </axis>
  </animation>
-  <animation>
 
+ <animation>
   <type>translate</type>
   <object-name>NoseWheel</object-name>
   <object-name>NoseWheelPart</object-name>
@@ -311,6 +312,7 @@
    <z>0.96363045</z>
   </axis>
  </animation>
+
  <animation>
   <type>spin</type>
   <object-name>NoseWheel</object-name>
@@ -532,6 +534,7 @@
   </axis>
  </animation>
 
+<!--
  <animation>
   <type>rotate</type>
   <object-name>Elevator</object-name>
@@ -579,8 +582,10 @@
   </axis>
  </animation>
  <animation>
+-->
 
 <!--  Rudder Animation -->
+ <animation>
   <type>rotate</type>
   <object-name>Rudder.a</object-name>
   <property>surface-positions/rudder-pos-norm</property>
@@ -647,8 +652,41 @@
   <factor>-88.5</factor>
   <center>
    <x-m>-0.0</x-m>
-   <y-m> 0.0</y-m>
-   <z-m> 0.6</z-m>
+   <y-m> 0.09</y-m>
+   <z-m> 0.65</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RWindow</object-name>
+   <property>surface-positions/window-pos-norm</property>
+  <factor>-19.0</factor>
+  <center>
+   <x-m>-0.0</x-m>
+   <y-m>-0.035 </y-m>
+   <z-m> 0.65</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LWindow</object-name>
+   <property>surface-positions/window-pos-norm</property>
+  <factor>88.5</factor>
+  <center>
+   <x-m>-0.0</x-m>
+   <y-m>-0.09</y-m>
+   <z-m> 0.65</z-m>
   </center>
   <axis>
    <x>1.0</x>
@@ -660,11 +698,11 @@
   <type>rotate</type>
   <object-name>LWindow</object-name>
    <property>surface-positions/window-pos-norm</property>
-  <factor>88.5</factor>
+  <factor>19.0</factor>
   <center>
    <x-m>-0.0</x-m>
-   <y-m> 0.0</y-m>
-   <z-m> 0.6</z-m>
+   <y-m> 0.035 </y-m>
+   <z-m> 0.65</z-m>
   </center>
   <axis>
    <x>1.0</x>
@@ -672,6 +710,7 @@
    <z>0.0</z>
   </axis>
  </animation>
+
  <animation>
   <type>slider</type>
   <object-name>WindowFrameLeft</object-name>
@@ -687,6 +726,7 @@
    </binding>
   </action>
  </animation>
+
  <animation>
   <type>slider</type>
   <object-name>WindowFrameRight</object-name>

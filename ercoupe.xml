@@ -262,6 +262,8 @@
 
  <aerodynamics>
 
+  <property>/surface-positions/window-pos-norm</property>
+
   <alphalimits unit="DEG">
    <min>-5.0</min>
    <max>14.0</max>

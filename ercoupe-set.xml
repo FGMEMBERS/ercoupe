@@ -113,7 +113,7 @@ Using David Megginson's 172P as a starting point.
    <internal archive="y">true</internal>
    <config>
      <x-offset-m archive="y">-0.230</x-offset-m>
-     <y-offset-m archive="y">0.925</y-offset-m>
+     <y-offset-m archive="y">0.745</y-offset-m>
      <z-offset-m archive="y">0.012</z-offset-m>
      <pitch-offset-deg>-9.5</pitch-offset-deg>
    </config>
@@ -139,7 +139,7 @@ Using David Megginson's 172P as a starting point.
       <right-direction-deg type="double">270</right-direction-deg>
       <front-right-direction-deg type="double">315</front-right-direction-deg>
       <x-offset-m type="double"> 0.230</x-offset-m>  <!-- x left/right -->
-      <y-offset-m type="double"> 0.925</y-offset-m>  <!-- up/down    -->
+      <y-offset-m type="double"> 0.745</y-offset-m>  <!-- up/down    -->
       <z-offset-m type="double"> 0.012</z-offset-m>   <!--  x front/back -->
       <pitch-offset-deg>-9</pitch-offset-deg>
       <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
