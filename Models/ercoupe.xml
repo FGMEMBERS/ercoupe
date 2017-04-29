@@ -649,7 +649,7 @@
   <type>rotate</type>
   <object-name>RWindow</object-name>
    <property>surface-positions/window-pos-norm</property>
-  <factor>-88.5</factor>
+  <factor>-8.0</factor>
   <center>
    <x-m>-0.0</x-m>
    <y-m> 0.09</y-m>
@@ -665,10 +665,10 @@
   <type>rotate</type>
   <object-name>RWindow</object-name>
    <property>surface-positions/window-pos-norm</property>
-  <factor>-19.0</factor>
+  <factor>-92.5</factor>
   <center>
    <x-m>-0.0</x-m>
-   <y-m>-0.035 </y-m>
+   <y-m> 0.05 </y-m>
    <z-m> 0.65</z-m>
   </center>
   <axis>
@@ -682,7 +682,7 @@
   <type>rotate</type>
   <object-name>LWindow</object-name>
    <property>surface-positions/window-pos-norm</property>
-  <factor>88.5</factor>
+  <factor>8.0</factor>
   <center>
    <x-m>-0.0</x-m>
    <y-m>-0.09</y-m>
@@ -698,10 +698,10 @@
   <type>rotate</type>
   <object-name>LWindow</object-name>
    <property>surface-positions/window-pos-norm</property>
-  <factor>19.0</factor>
+  <factor>92.5</factor>
   <center>
    <x-m>-0.0</x-m>
-   <y-m> 0.035 </y-m>
+   <y-m>-0.05 </y-m>
    <z-m> 0.65</z-m>
   </center>
   <axis>
