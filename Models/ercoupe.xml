@@ -75,15 +75,7 @@
 
   <animation>
     <type>material</type>
-    <object-name>LWing</object-name>
-    <object-name>RWing</object-name>
-    <object-name>VTail</object-name>
-    <object-name>HTail</object-name>
-    <object-name>Elevator</object-name>
-    <object-name>LAileron</object-name>
-    <object-name>RAileron</object-name>
-    <object-name>Rudder.a</object-name>
-    <object-name>Rudder.b</object-name>
+    <object-name>Wings</object-name>
     <property-base>sim/model/livery-wings</property-base>
     <texture-prop>texture</texture-prop>
     <texture>c150-02.png</texture>
@@ -97,15 +89,7 @@
 
   <effect>
     <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec-wings</inherits-from>
-    <object-name>LWing</object-name>
-    <object-name>RWing</object-name>
-    <object-name>VTail</object-name>
-    <object-name>HTail</object-name>
-    <object-name>Elevator</object-name>
-    <object-name>LAileron</object-name>
-    <object-name>RAileron</object-name>
-    <object-name>Rudder.a</object-name>
-    <object-name>Rudder.b</object-name>
+    <object-name>Wings</object-name>
   </effect>
 
 <!-- interior shadow -->

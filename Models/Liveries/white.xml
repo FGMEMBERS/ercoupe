@@ -4,7 +4,7 @@
   <sim>
     <model>
       <livery>
-        <name type="string">Red and white</name>
+        <name type="string">White And Red</name>
         <texture>Liveries/ercoupe-ext2-white.png</texture>
         <shininess type="float">-0.75</shininess>
       </livery>
