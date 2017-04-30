@@ -20,8 +20,8 @@
   <path>Aircraft/ercoupe/Models/Instruments/ASI/asi.xml</path>
   <offsets>
    <x-m>-0.490</x-m>
-   <y-m>-0.1084</y-m>
-   <z-m> 0.7218</z-m>
+   <y-m>-0.1094</y-m>
+   <z-m> 0.7220</z-m>
   </offsets>
  </model>
 
@@ -95,7 +95,7 @@
   <path>Aircraft/ercoupe/Models/Instruments/rpm/rpm.xml</path>
   <offsets>
    <x-m>-0.505</x-m>
-   <y-m>-0.3602</y-m>
+   <y-m>-0.3610</y-m>
    <z-m> 0.6499</z-m>
   </offsets>
  </model>
