@@ -85,6 +85,8 @@
   <effect>
     <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec-fuselage</inherits-from>
     <object-name>Fuselage</object-name>
+    <object-name>WindowFrameLeft</object-name>
+    <object-name>WindowFrameRight</object-name>
   </effect>
 
   <effect>
@@ -95,7 +97,7 @@
 <!-- interior shadow -->
   <effect>
     <inherits-from>Aircraft/ercoupe/Models/Effects/shadow</inherits-from>
-    <object-name>interior</object-name>
+    <object-name>Interior</object-name>
     <object-name>InstrumentPanel</object-name>
   </effect>
 
@@ -128,22 +130,14 @@
  </model>
 
 <!-- Interior -->
- <animation>
-  <name>InteriorGroup</name>
-  <object-name>Cabin</object-name>
-  <object-name>Panel</object-name>
-  <object-name>PilotSeat</object-name>
-  <object-name>CopilotSeat</object-name>
- </animation>
-
  <effect>
   <inherits-from>Aircraft/ercoupe/Models/Effects/interior</inherits-from>
-  <object-name>InteriorGroup</object-name>
+  <object-name>Interior</object-name>
  </effect>
 
  <animation>
   <type>range</type>
-  <object-name>InteriorGroup</object-name>
+  <object-name>Interior</object-name>
   <min-m>0</min-m>
   <max-m>50</max-m>
  </animation>
@@ -464,7 +458,7 @@
 <!--  Aileron Animations  -->
  <animation>
   <type>rotate</type>
-  <object-name>LeftAileron</object-name>
+  <object-name>LAileron</object-name>
   <property>surface-positions/left-aileron-pos-norm</property>
   <interpolation>
    <entry>
@@ -492,7 +486,7 @@
 
  <animation>
   <type>rotate</type>
-  <object-name>RightAileron</object-name>
+  <object-name>RAileron</object-name>
   <property>surface-positions/right-aileron-pos-norm</property>
   <interpolation>
    <entry>
@@ -518,11 +512,9 @@
   </axis>
  </animation>
 
-<!--
  <animation>
   <type>rotate</type>
   <object-name>Elevator</object-name>
-  <object-name>ElevatorTrimTab</object-name>
   <property>surface-positions/elevator-pos-norm</property>
    <interpolation>
    <entry>
@@ -549,29 +541,11 @@
    <z>0.0</z>
   </axis>
  </animation>
- <animation>
-  <type>rotate</type>
-  <object-name>ElevatorTrimTab</object-name>
-  <property>controls/flight/elevator-trim</property>
-  <factor>25</factor>
-  <center>
-   <x-m>5.06</x-m>
-   <y-m>1.12</y-m>
-   <z-m>-0.18</z-m>
-  </center>
-  <axis>
-   <x>0.17</x>
-   <y>-0.82</y>
-   <z>0.0</z>
-  </axis>
- </animation>
- <animation>
--->
 
 <!--  Rudder Animation -->
  <animation>
   <type>rotate</type>
-  <object-name>Rudder.a</object-name>
+  <object-name>LRudder</object-name>
   <property>surface-positions/rudder-pos-norm</property>
   <interpolation>
    <entry>
@@ -600,7 +574,7 @@
  </animation>
  <animation>
   <type>rotate</type>
-  <object-name>Rudder.b</object-name>
+  <object-name>RRudder</object-name>
   <property>surface-positions/rudder-pos-norm</property>
   <interpolation>
    <entry>
