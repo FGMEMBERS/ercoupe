@@ -94,6 +94,11 @@
     <object-name>Wings</object-name>
   </effect>
 
+  <effect>
+  <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec-cylinders</inherits-from>
+  <object-name>cylinders</object-name>
+ </effect>
+
 <!-- interior shadow -->
   <effect>
     <inherits-from>Aircraft/ercoupe/Models/Effects/shadow</inherits-from>

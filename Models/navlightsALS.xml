@@ -1,11 +1,11 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <PropertyList>
 
 <!-- Lights -->
 
 <model>
-<name>RedLightALS</name>
+<name>WhiteLightALS</name>
 <path>Aircraft/ercoupe/Models/Effects/lights/red-navlight.xml</path>
 <offsets>
 <x-m>-0.22</x-m>
@@ -26,11 +26,11 @@
 
 <model>
 <name>BeaconLight</name>
-<path>Aircraft/ercoupe/Models/Effects/lights/beacon-navlight.xml</path>
+<path>Aircraft/ercoupe/Models/Effects/lights/white-navlight.xml</path>
 <offsets>
-<x-m> 1.5</x-m>
+<x-m> 4.35</x-m>
 <y-m> 0.0</y-m>
-<z-m> 0.8</z-m>
+<z-m> 0.41</z-m>
 </offsets>
 </model>
 

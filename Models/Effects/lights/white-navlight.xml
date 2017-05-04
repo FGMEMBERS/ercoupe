@@ -7,10 +7,10 @@
 
 
  <effect>
-   <inherits-from>Aircraft/ercoupe/Models/Effects/lights/white-navlight</inherits-from>
+   <inherits-from>Aircraft/ercoupe/Models/Effects/lights/beacon-navlight</inherits-from>
    <object-name>light</object-name>
  </effect>
- 
+
  <animation>
   <type>scale</type>
   <x-offset>0.175</x-offset>
