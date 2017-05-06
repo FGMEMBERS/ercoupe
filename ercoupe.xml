@@ -17,7 +17,7 @@
   Inputs:
     name:          Ercoupe
     type:          Single engine Glider, Small Commuter
-    stall speed:   41.71kts
+    stall speed:   30.10kts
     max weight:    1260.00 lb
     length:        20.75 ft
     wing: 
@@ -26,7 +26,7 @@
      mean chord:   5.11 ft
      aspect ratio: 6.31:1
      taper ratio:  1.00:1
-     incidence:    2.00 degrees
+     incidence:    2.50 degrees
      dihedral:     7.00 degrees
      sweep:        0.00 degrees
 
@@ -40,11 +40,11 @@
 
   Outputs:
     wing loading:       8.84 lb/sq-ft
-     - thickness ratio: 10.33%
+     - thickness ratio: 11.02%
     payload:            235.52 lbs
-    CL-alpha:           4.93 per radian
-    CL-0:               0.32
-    CL-max:             1.50
+    CL-alpha:           4.83 per radian
+    CL-0:               0.36
+    CL-max:             1.71
     CD-0:               0.02
     K:                  0.04
     Mcrit:              0.70
@@ -53,12 +53,12 @@
  <metrics>
    <wingarea  unit="FT2">   142.60 </wingarea>
    <wingspan  unit="FT" >    30.00 </wingspan>
-   <wing_incidence unit="DEG"> 2.00 </wing_incidence>
+   <wing_incidence unit="DEG"> 2.50 </wing_incidence>
    <chord     unit="FT" >     5.11 </chord>
-   <htailarea unit="FT2">    21.15 </htailarea>
-   <htailarm  unit="FT" >    12.97 </htailarm>
-   <vtailarea  unit="FT2">   43.90 </vtailarea>
-   <vtailarm  unit="FT" >    19.97 </vtailarm>
+   <htailarea unit="FT2">    19.60 </htailarea>
+   <htailarm  unit="FT" >    13.25 </htailarm>
+   <vtailarea  unit="FT2">    9.30 </vtailarea>
+   <vtailarm  unit="FT" >    13.25 </vtailarm>
    <location name="AERORP" unit="IN">
      <x>    93.36 </x>
      <y>     0.00 </y>
@@ -337,9 +337,9 @@
             <tableData>
                      0.0     60.0
               -0.24  0.000   0.000
-               0.00  0.063   0.169
-               0.26  0.300   0.800
-               0.52  0.000   0.000
+               0.00  0.072   0.192
+               0.30  0.341   0.911
+               0.59  0.000   0.000
             </tableData>
           </table>
       </product>
@@ -392,7 +392,7 @@
           <property>metrics/Sw-sqft</property>
           <property>velocities/q-aero-rad_sec</property>
           <property>aero/ci2vel</property>
-          <value> 3.0121 </value>
+          <value> 2.8516 </value>
         </product>
       </function>
 
@@ -437,7 +437,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/elevator-pos-rad</property>
-           <value> 0.3978 </value>
+           <value> 0.3686 </value>
        </product>
     </function>
 
@@ -485,7 +485,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/cl-squared</property>
-           <value> 0.04 </value>
+           <value> 0.0531 </value>
          </product>
     </function>
 
@@ -554,7 +554,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/beta-rad</property>
-           <value> -1.4057 </value>
+           <value> -0.2978 </value>
        </product>
     </function>
     <function name="aero/force/Side_roll_rate">
@@ -567,10 +567,10 @@
            <table>
              <independentVar lookup="row">aero/Re</independentVar>
              <tableData>
-                 2292379   0.2722
-                 2521617   0.0232
-                 3438569   0.0103
-                 4607793   0.0057
+                 2148934   0.3097
+                 2363827   0.0264
+                 3223401   0.0117
+                 4319461   0.0065
              </tableData>
            </table>
        </product>
@@ -583,13 +583,44 @@
            <property>metrics/Sw-sqft</property>
            <property>aero/bi2vel</property>
            <property>velocities/r-aero-rad_sec</property>
-           <value> 1.8714 </value>
+           <value> 0.2630 </value>
+       </product>
+    </function>
+
+    <function name="aero/force/Side_rudder">
+       <description>Side force due to rudder</description>
+       <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>fcs/rudder-pos-rad</property>
+           <value> 0.0917 </value>
        </product>
     </function>
 
   </axis>
 
   <axis name="PITCH">
+
+    <function name="aero/moment/Pitch_propwash">
+      <description>Pitch moment due to propeller induced velocity</description>
+      <product>
+          <property>propulsion/engine[0]/thrust-coefficient</property>
+          <property>aero/qbar-psf</property>
+          <property>metrics/Sw-sqft</property>
+          <property>metrics/bw-ft</property>
+          <table>
+            <independentVar lookup="row">aero/alpha-rad</independentVar>
+            <independentVar lookup="column">fcs/flap-pos-deg</independentVar>
+            <tableData>
+                     0.0     60.0
+              -0.01  0.000   0.000
+               0.00 -0.026  -0.068
+               0.30 -0.122  -0.325
+               0.39  0.000   0.000
+            </tableData>
+          </table>
+      </product>
+    </function>
 
     <function name="aero/moment/Pitch_alpha">
        <description>Pitch moment due to alpha</description>
@@ -657,7 +688,7 @@
            <property>metrics/cbarw-ft</property>
            <property>aero/ci2vel</property>
            <property>velocities/q-aero-rad_sec</property>
-           <value> -7.6452 </value>
+           <value> -7.3941 </value>
        </product>
     </function>
 
@@ -762,7 +793,7 @@
            <property>metrics/bw-ft</property>
            <property>aero/bi2vel</property>
            <property>velocities/p-aero-rad_sec</property>
-           <value> -0.5316 </value>
+           <value> -0.6327 </value>
        </product>
     </function>
 
@@ -778,9 +809,9 @@
              <independentVar lookup="row">aero/alpha-rad</independentVar>
              <independentVar lookup="column">aero/Re</independentVar>
              <tableData>
-                          2449392  2694331  3674088  4923395
-                 -0.0349  -0.0263  -0.0263  -0.0263  -0.0263
-                  0.3491   3.6881   0.4467   0.4467   0.4467
+                          2148934  2363827  3223401  4319461
+                 -0.0349   0.0390   0.0390   0.0390   0.0390
+                  0.3491   4.2591   0.5031   0.5031   0.5031
              </tableData>
            </table>
        </product>
@@ -831,7 +862,7 @@
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>aero/beta-rad</property>
-           <value> 0.4496 </value>
+           <value> 0.0632 </value>
        </product>
     </function>
 
@@ -846,10 +877,10 @@
            <table>
              <independentVar lookup="row">aero/Re</independentVar>
              <tableData>
-                 2292379  -0.1812
-                 2521617  -0.0154
-                 3438569  -0.0069
-                 4607793  -0.0038
+                 2148934  -0.1368
+                 2363827  -0.0117
+                 3223401  -0.0052
+                 4319461  -0.0029
              </tableData>
            </table>
        </product>
@@ -863,7 +894,18 @@
            <property>metrics/bw-ft</property>
            <property>aero/bi2vel</property>
            <property>velocities/r-aero-rad_sec</property>
-           <value> -0.6103 </value>
+           <value> -0.0698 </value>
+       </product>
+    </function>
+
+    <function name="aero/moment/Yaw_rudder">
+       <description>Yaw_moment_due_to_rudder</description>
+       <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>metrics/bw-ft</property>
+           <property>fcs/rudder-pos-rad</property>
+           <value>-0.0405</value>
        </product>
     </function>
 
@@ -875,17 +917,6 @@
            <property>metrics/bw-ft</property>
            <property>fcs/left-aileron-pos-rad</property>
            <value> -0.0100 </value>
-       </product>
-    </function>
-
-    <function name="aero/moment/Yaw_rudder">
-       <description>Yaw_moment_due_to_rudder</description>
-       <product>
-           <property>aero/qbar-psf</property>
-           <property>metrics/Sw-sqft</property>
-           <property>metrics/bw-ft</property>
-           <property>fcs/rudder-pos-rad</property>
-           <value>-0.1</value>
        </product>
     </function>
 
