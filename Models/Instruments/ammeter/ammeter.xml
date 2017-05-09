@@ -4,12 +4,13 @@
 
     <path>ammeter.ac</path>
 
+<!--
     <effect>
-        <inherits-from>Aircraft/c150/Models/Effects/interior/flashlight</inherits-from>
+        <inherits-from>Aircraft/ercoupe/Models/Effects/interior/flashlight</inherits-from>
         <object-name>Circle</object-name>
         <object-name>hand</object-name>
     </effect>
-
+-->
 
     <animation>
         <type>material</type>

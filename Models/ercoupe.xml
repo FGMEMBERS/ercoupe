@@ -98,6 +98,8 @@
   <effect>
     <inherits-from>Aircraft/ercoupe/Models/Effects/shadow</inherits-from>
     <object-name>Interior</object-name>
+    <object-name>LeftYoke</object-name>
+    <object-name>RightYoke</object-name>
   </effect>
 
 <!-- glass effect -->
@@ -132,6 +134,8 @@
  <effect>
   <inherits-from>Aircraft/ercoupe/Models/Effects/interior</inherits-from>
   <object-name>Interior</object-name>
+  <object-name>LeftYoke</object-name>
+  <object-name>RightYoke</object-name>
  </effect>
 
  <animation>
@@ -703,6 +707,14 @@
 
 
  <!-- Panel animations -->
+<!--
+ <effect>
+  <inherits-from>Aircraft/ercoupe/Models/Effects/panel</inherits-from>
+  <object-name>panel</object-name>
+  <object-name>GloveCompartments</object-name>
+ </effect>
+-->
+
  <model>
   <name>Magnetos</name>
   <path>Aircraft/ercoupe/Models/Cockpit/Magnetos.xml</path>
@@ -1142,6 +1154,43 @@
   </hovered>
  </animation>
 
-</PropertyList>
+ <animation>
+  <type>material</type>
+  <object-name>PanelLightLens</object-name>
+  <emission>
+    <red>0.9</red>
+    <green>0.85</green>
+    <blue>0.7</blue>
+    <factor-prop>controls/lighting/panel-light</factor-prop>
+  </emission>
+ </animation>
 
+ <animation>
+  <type>pick</type>
+  <object-name>PanelLightSwitch</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/lighting/panel-light</property>
+   </binding>
+  </action>
+  <hovered>
+   <binding>
+    <command>set-tooltip</command>
+    <label>Panel Light: %s</label>
+    <measure-text>Panel Light: Off</measure-text>
+    <tooltip-id>panellight</tooltip-id>
+    <mapping>nasal</mapping>
+    <script>
+     var modes = ['Off', 'On'];
+     return modes[arg[0]];
+    </script>
+    <property>controls/lighting/panel-light</property>
+   </binding>
+  </hovered>
+ </animation>
+
+</PropertyList>
 

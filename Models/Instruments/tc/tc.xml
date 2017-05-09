@@ -18,13 +18,15 @@
   </emission>
  </animation>
  
+<!-->
  <effect>
-  <inherits-from>Aircraft/c150/Models/Effects/interior/flashlight</inherits-from>
+  <inherits-from>Aircraft/ercoupe/Models/Effects/interior/flashlight</inherits-from>
   <object-name>Ball</object-name>
   <object-name>Face</object-name>
   <object-name>Airplane</object-name>
   <object-name>Background</object-name>
  </effect>
+-->
 
  <animation>
   <type>rotate</type>
