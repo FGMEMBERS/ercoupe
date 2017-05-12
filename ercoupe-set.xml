@@ -1,12 +1,7 @@
 <?xml version="1.0"?>
 <!--
 ************************************************************************
-
 JSBSim Ercoupe with 3D cockpit.
-
-Using David Megginson's 172P as a starting point.
-
-
 ************************************************************************
 -->
 
@@ -15,9 +10,9 @@ Using David Megginson's 172P as a starting point.
  <sim>
 
   <description>Ercoupe</description>
-  <longdescription>
+  <long-description>
    The ERCO Ercoupe is a low-wing monoplane aircraft that was designed and built in the United States. It was first manufactured by the Engineering and Research Corporation (ERCO) shortly before World War II; several other manufacturers continued its production after the war. It was designed to be the safest fixed-wing aircraft that aerospace engineering could provide at the time.
-  </longdescription>
+  </long-description>
   <author>Erik Hofman, Ron Jensen (FDM and 3d Model), pab (3d Model), Harald Johnsen (Cockpit)</author>
   <status>beta</status>
 
@@ -27,6 +22,7 @@ Using David Megginson's 172P as a starting point.
     <cockpit type="int">5</cockpit>
     <model type="int">5</model>
   </rating>
+
   <tags>
     <tag>ecro</tag>
     <tag>low-wing</tag>
