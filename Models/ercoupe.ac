@@ -30,7 +30,7 @@ name "PanelStrips"
 loc -0.28506 -0.103996 -0.0948068
 kids 4
 OBJECT poly
-name "box"
+name "metal"
 loc 1.66893e-06 3.8743e-06 0.0456402
 texture "panel02.png"
 crease 90.000000
@@ -81,7 +81,7 @@ refs 4
 1 0.433181 0.313402
 kids 0
 OBJECT poly
-name "box"
+name "metal"
 loc 1.66893e-06 -9.05991e-06 0.0554897
 texture "panel02.png"
 crease 90.000000
@@ -132,7 +132,7 @@ refs 4
 3 0.418574 0.0195036
 kids 0
 OBJECT poly
-name "box"
+name "metal"
 loc -1.66893e-06 -3.8743e-06 -0.0456402
 texture "panel02.png"
 crease 90.000000
@@ -183,7 +183,7 @@ refs 4
 1 0.524533 0.313395
 kids 0
 OBJECT poly
-name "box"
+name "metal"
 loc -1.66893e-06 9.05991e-06 -0.0554897
 texture "panel02.png"
 crease 90.000000
@@ -242,7 +242,7 @@ name "RGloveCompartment"
 loc 2.87965e-06 -6.3777e-05 -0.234992
 kids 3
 OBJECT poly
-name "box"
+name "metal"
 loc -0.514117 -0.288507 -0.0135233
 texture "panel02.png"
 crease 90.000000
@@ -1512,7 +1512,7 @@ name "LGloveCompartment"
 loc -2.87592e-06 6.3777e-05 0.234992
 kids 3
 OBJECT poly
-name "box"
+name "metal"
 loc -0.514006 -0.28767 -0.0275548
 texture "panel02.png"
 crease 90.000000

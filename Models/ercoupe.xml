@@ -714,6 +714,18 @@
   <object-name>InstrumentPanel</object-name>
  </effect>
 
+ <effect>
+  <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec</inherits-from>
+  <parameters>
+   <reflection-correction>-0.4</reflection-correction>
+   <lightmap-enabled type="int"><use>/controls/lighting/panel-light</use></lightmap-enabled>
+   <texture n="3">
+    <image>Aircraft/ercoupe/Models/panel02-lightmap.png</image>
+  </texture>
+  </parameters>
+  <object-name>metal</object-name>
+ </effect>
+
 <!-- Top Row -->
  <model>
   <name>ASI</name>
