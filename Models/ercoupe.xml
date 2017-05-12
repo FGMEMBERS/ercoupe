@@ -707,23 +707,12 @@
 
 
  <!-- Panel animations -->
-<!--
  <effect>
   <inherits-from>Aircraft/ercoupe/Models/Effects/panel</inherits-from>
-  <object-name>panel</object-name>
-  <object-name>GloveCompartments</object-name>
+  <object-name>panelTop</object-name>
+  <object-name>FireExtinguisher</object-name>
+  <object-name>InstrumentPanel</object-name>
  </effect>
--->
-
- <model>
-  <name>Magnetos</name>
-  <path>Aircraft/ercoupe/Models/Cockpit/Magnetos.xml</path>
-  <offsets>
-   <x-m>-0.490</x-m>
-   <y-m>-0.09</y-m>
-   <z-m> 0.54</z-m>
-  </offsets>
- </model>
 
 <!-- Top Row -->
  <model>
@@ -1016,6 +1005,50 @@
     <measure-text>Engine Primer: 1</measure-text>
     <tooltip-id>primer</tooltip-id>
     <property>controls/engines/engine/primer-lever</property>
+   </binding>
+  </hovered>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Key</object-name>
+  <property>controls/engines/engine/magnetos</property>
+  <factor>-15</factor>
+  <center>
+  <x-m>0.0</x-m>
+  <y-m>-0.105</y-m>
+  <z-m>0.52832</z-m>
+ </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>knob</type>
+  <object-name>Key</object-name>
+  <value>0.0</value>
+  <action>
+   <binding>
+    <command>property-adjust</command>
+    <property>controls/engines/engine/magnetos</property>
+    <factor>1</factor>
+   </binding>
+  </action>
+  <hovered>
+   <binding>
+    <command>set-tooltip</command>
+    <label>Magnetos: %s</label>
+    <measure-text>Magnetos: Off</measure-text>
+    <tooltip-id>magnetos</tooltip-id>
+    <property>controls/engines/engine/magnetos</property>
+    <mapping>nasal</mapping>
+    <script>
+     var modes = ['Off', '1st', '2nd', 'Both'];
+     return modes[arg[0]];
+    </script>
    </binding>
   </hovered>
  </animation>
