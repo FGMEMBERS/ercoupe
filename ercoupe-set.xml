@@ -180,11 +180,14 @@ JSBSim Ercoupe with 3D cockpit.
  <controls>
   <flight>
    <aileron-trim>0.054</aileron-trim>
-   <elevator-trim>0.0</elevator-trim><!-- FIXME set me! -->
+   <elevator-trim>0.0</elevator-trim>
   </flight>
   <avionics>
    <power type="bool">1</power>
   </avionics>
+  <lighting>
+   <instruments-norm type="float">0.4</instruments-norm>
+  </lighting>
   <engines>
    <engine n="0">
     <magnetos>3</magnetos>

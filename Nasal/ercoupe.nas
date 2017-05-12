@@ -110,3 +110,4 @@ var update_ercoupe = func {
 
 beacon_switch = props.globals.getNode("controls/lighting/nav-lights", 2);
 var beacon = aircraft.light.new( "/sim/model/lights/beacon", [0.4, 0.4], "controls/lighting/nav-lights" );
+

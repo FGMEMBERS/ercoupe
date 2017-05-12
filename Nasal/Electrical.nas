@@ -115,7 +115,7 @@ setlistener("/sim/signals/fdm-initialized", func {
 #    props.globals.getNode("controls/cabin/fan",1).setBoolValue(0);
 #    props.globals.getNode("controls/cabin/heat",1).setBoolValue(0);
     props.globals.getNode("controls/lighting/instrument-lights",1).setBoolValue(1);
-    props.globals.getNode("controls/lighting/panel-light",1).setBoolValue(1);
+    props.globals.getNode("controls/lighting/panel-light",1).setBoolValue(0);
 #    props.globals.getNode("controls/lighting/warning-test[0]",1).setBoolValue(0);
 #    props.globals.getNode("controls/lighting/warning-test[1]",1).setBoolValue(0);
     FDM = 1;
