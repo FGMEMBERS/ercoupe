@@ -719,6 +719,7 @@
   <parameters>
    <reflection-correction>-0.4</reflection-correction>
    <lightmap-enabled type="int"><use>/controls/lighting/panel-light</use></lightmap-enabled>
+   <lightmap-factor type="float" n="0"><use>controls/lighting/instruments-norm</use></lightmap-factor>
    <texture n="3">
     <image>Aircraft/ercoupe/Models/panel02-lightmap.png</image>
   </texture>
@@ -1206,10 +1207,34 @@
     <red>0.9</red>
     <green>0.85</green>
     <blue>0.7</blue>
-    <factor-prop>controls/lighting/panel-light</factor-prop>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
   </emission>
  </animation>
 
+ <animation>
+  <type>slider</type>
+  <object-name>PanelLightSwitch</object-name>
+  <drag-direction>horizontal</drag-direction>
+  <value>0.0</value>
+  <action>
+   <binding>
+    <command>property-adjust</command>
+    <property>controls/lighting/instruments-norm</property>
+    <factor>0.1</factor>
+   </binding>
+  </action>
+  <hovered>
+   <binding>
+    <command>set-tooltip</command>
+    <label>Panel Light: %3d%%</label>
+    <measure-text>Panel Light: 40%</measure-text>
+    <tooltip-id>panellight</tooltip-id>
+    <mapping>percent</mapping>
+    <property>controls/lighting/instruments-norm</property>
+   </binding>
+  </hovered>
+ </animation>
+<!--
  <animation>
   <type>pick</type>
   <object-name>PanelLightSwitch</object-name>
@@ -1236,6 +1261,7 @@
    </binding>
   </hovered>
  </animation>
+-->
 
 </PropertyList>
 

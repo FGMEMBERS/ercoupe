@@ -26,6 +26,7 @@
   <texture n="3">
    <image>Aircraft/ercoupe/Models/panel02-lightmap.png</image>
   </texture>
+  <lightmap-factor type="float" n="0"><use>controls/lighting/instruments-norm</use></lightmap-factor>
   <texture n="4">
     <type>cubemap</type>
     <images>
