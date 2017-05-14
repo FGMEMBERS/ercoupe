@@ -718,7 +718,7 @@
   <inherits-from>Aircraft/ercoupe/Models/Effects/bumpspec</inherits-from>
   <parameters>
    <reflection-correction>-0.4</reflection-correction>
-   <lightmap-enabled type="int"><use>/controls/lighting/panel-light</use></lightmap-enabled>
+   <lightmap-enabled type="int"><use>controls/lighting/panel-light</use></lightmap-enabled>
    <lightmap-factor type="float" n="0"><use>controls/lighting/instruments-norm</use></lightmap-factor>
    <texture n="3">
     <image>Aircraft/ercoupe/Models/panel02-lightmap.png</image>
@@ -750,27 +750,25 @@
 
 <!-- Bottom Row -->
 
-<!--
  <model>
   <name>OilPres</name>
-  <path>Aircraft/ercoupe/Models/Instruments/oil/OilPress.xml</path>
+  <path>Aircraft/ercoupe/Models/Instruments/oil-press/oil-press.xml</path>
   <offsets>
-   <x-m>-0.495</x-m>
-   <y-m>-0.1472</y-m>
-   <z-m> 0.5557</z-m>
+   <x-m>-0.497</x-m>
+   <y-m>-0.431</y-m>
+   <z-m> 0.579</z-m>
   </offsets>
  </model>
 
  <model>
   <name>OilTemp</name>
-  <path>Aircraft/ercoupe/Models/Instruments/oil/OilTemp.xml</path>
+  <path>Aircraft/ercoupe/Models/Instruments/oil-temp/oil-temp.xml</path>
   <offsets>
-   <x-m>-0.495</x-m>
-   <y-m>-0.1272</y-m>
-   <z-m> 0.5557</z-m>
+   <x-m>-0.497</x-m>
+   <y-m>-0.357</y-m>
+   <z-m> 0.579</z-m>
   </offsets>
  </model>
--->
 
  <model>
   <name>OBI</name>
