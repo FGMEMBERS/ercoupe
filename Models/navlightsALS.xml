@@ -5,7 +5,7 @@
 <!-- Lights -->
 
 <model>
-<name>WhiteLightALS</name>
+<name>RedLight</name>
 <path>Aircraft/ercoupe/Models/Effects/lights/red-navlight.xml</path>
 <offsets>
 <x-m>-0.22</x-m>
