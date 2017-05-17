@@ -48,6 +48,17 @@
   <max-m>10000</max-m>
  </animation>
 
+ <animation>
+  <type>alpha-test</type>
+  <object-name>Glass</object-name>
+  <alpha-factor>0.01</alpha-factor>
+ </animation>
+
+ <effect>
+  <inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>Glass</object-name>
+ </effect>
+
 <!-- Livery  -->
   <nasal>
     <load>
@@ -129,6 +140,54 @@
    <z-m> 0.740649</z-m>
   </offsets>
  </model>
+
+ <animation>
+  <type>material</type>
+  <object-name>TailLightLens</object-name>
+  <emission>
+    <red>0.5</red>
+    <green>0.4</green>
+    <blue>0.0</blue>
+    <factor-prop>controls/lighting/nav-lights</factor-prop>
+  </emission>
+  <transparency>
+   <alpha-prop>controls/lighting/nav-lights</alpha-prop>
+   <factor>0.2</factor>
+   <offset>0.7</offset>
+  </transparency>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>LeftNavLightLens</object-name>
+  <emission>
+    <red>1.0</red>
+    <green>0.5</green>
+    <blue>0.0</blue>
+    <factor-prop>controls/lighting/nav-lights</factor-prop>
+  </emission>
+  <transparency>
+   <alpha-prop>controls/lighting/nav-lights</alpha-prop>
+   <factor>0.2</factor>
+   <offset>0.7</offset>
+  </transparency>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>RightNavLightLens</object-name>
+  <emission>
+    <red>1.0</red>
+    <green>0.8</green>
+    <blue>0.0</blue>
+    <factor-prop>controls/lighting/nav-lights</factor-prop>
+  </emission>
+  <transparency>
+   <alpha-prop>controls/lighting/nav-lights</alpha-prop>
+   <factor>0.2</factor>
+   <offset>0.7</offset>
+  </transparency>
+ </animation>
 
 <!-- Interior -->
  <effect>

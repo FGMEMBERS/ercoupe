@@ -8,7 +8,7 @@
 <name>RedLight</name>
 <path>Aircraft/ercoupe/Models/Effects/lights/red-navlight.xml</path>
 <offsets>
-<x-m>-0.22</x-m>
+<x-m>-0.19</x-m>
 <y-m>-4.56</y-m>
 <z-m> 0.43</z-m>
 </offsets>
@@ -18,7 +18,7 @@
 <name>GreenLight</name>
 <path>Aircraft/ercoupe/Models/Effects/lights/green-navlight.xml</path>
 <offsets>
-<x-m>-0.22</x-m>
+<x-m>-0.19</x-m>
 <y-m> 4.56</y-m>
 <z-m> 0.43</z-m>
 </offsets>
@@ -28,7 +28,7 @@
 <name>BeaconLight</name>
 <path>Aircraft/ercoupe/Models/Effects/lights/white-navlight.xml</path>
 <offsets>
-<x-m> 4.35</x-m>
+<x-m> 4.34</x-m>
 <y-m> 0.0</y-m>
 <z-m> 0.41</z-m>
 </offsets>
