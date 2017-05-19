@@ -55,7 +55,7 @@
  </animation>
 
  <effect>
-  <inherits-from>Effects/model-transparent</inherits-from>
+  <inherits-from>Effects/glass</inherits-from>
   <object-name>Glass</object-name>
  </effect>
 
