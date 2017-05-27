@@ -115,7 +115,7 @@ setlistener("/sim/signals/fdm-initialized", func {
 #    props.globals.getNode("controls/cabin/fan",1).setBoolValue(0);
 #    props.globals.getNode("controls/cabin/heat",1).setBoolValue(0);
     props.globals.getNode("controls/lighting/instrument-lights",1).setBoolValue(1);
-    props.globals.getNode("controls/lighting/panel-lights",1).setBoolValue(1);
+    props.globals.getNode("controls/lighting/panel-light",1).setBoolValue(1);
 #    props.globals.getNode("controls/lighting/warning-test[0]",1).setBoolValue(0);
 #    props.globals.getNode("controls/lighting/warning-test[1]",1).setBoolValue(0);
     FDM = 1;
@@ -250,7 +250,7 @@ var electrical_bus = func() {
         } else {
         OutPuts.getNode("instrument-lights-norm",1).setValue(0.0);
         }
-    if ( props.globals.getNode("controls/lighting/panel-lights").getBoolValue()){
+    if ( props.globals.getNode("controls/lighting/panel-light").getBoolValue()){
         OutPuts.getNode("panel-lights-norm",1).setValue((bus_volts * NORM) *PDIMMER.getValue() );
         } else {
         OutPuts.getNode("panel-lights-norm",1).setValue(0.0);

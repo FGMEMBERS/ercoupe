@@ -1,12 +1,7 @@
 <?xml version="1.0"?>
 <!--
 ************************************************************************
-
 JSBSim Ercoupe with 3D cockpit.
-
-Using David Megginson's 172P as a starting point.
-
-
 ************************************************************************
 -->
 
@@ -15,22 +10,62 @@ Using David Megginson's 172P as a starting point.
  <sim>
 
   <description>Ercoupe</description>
-  <author>Ron Jensen (jentron) - FDM 3d Models</author>
-  <author> (pab) - 3d Models</author>
-  <status>alpha</status>
+  <long-description>
+   The ERCO Ercoupe is a low-wing monoplane aircraft that was designed and built in the United States. It was first manufactured by the Engineering and Research Corporation (ERCO) shortly before World War II; several other manufacturers continued its production after the war. It was designed to be the safest fixed-wing aircraft that aerospace engineering could provide at the time.
+  </long-description>
+  <author>Erik Hofman, Ron Jensen (FDM and 3d Model), pab (3d Model), Harald Johnsen (Cockpit)</author>
+  <status>beta</status>
+
+  <rating>
+    <FDM type="int">5</FDM>
+    <systems type="int">4</systems>
+    <cockpit type="int">5</cockpit>
+    <model type="int">5</model>
+  </rating>
+
+  <tags>
+    <tag>ecro</tag>
+    <tag>low-wing</tag>
+    <tag>tricycle</tag>
+    <tag>fixed-gear</tag>
+    <tag>single-engine</tag>
+    <tag>piston</tag>
+    <tag>fixed-pitch</tag>
+    <tag>1940s</tag>
+    <tag>1950s</tag>
+    <tag>1960s</tag>
+  </tags>
 
   <flight-model archive="y">jsb</flight-model>
   <aero archive="y">ercoupe</aero>
-  <startup>
-     <splash-texture>Aircraft/ercoupe/ercoupe-splash.rgb</splash-texture>
-  </startup>
 
-    <model>
-      <path archive="y">Aircraft/ercoupe/Models/ercoupe.xml</path>
-      <livery>
-        <file type="string">gray</file>
-      </livery>
-    </model>
+  <startup>
+  </startup>
+  <previews>
+    <preview>
+      <type>exterior</type>
+      <path>Preview/ercoupe.jpg</path>
+      <splash type="bool">true</splash>
+    </preview>
+    <preview>
+      <type>exterior</type>
+      <path>Preview/ercoupe2.jpg</path>
+      <splash type="bool">true</splash>
+    </preview>
+    <preview>
+      <type>panel</type>
+      <path>Preview/ercoupe_int.jpg</path>
+      <splash type="bool">false</splash>
+    </preview>
+  </previews>
+
+  <model>
+    <path archive="y">Aircraft/ercoupe/Models/ercoupe.xml</path>
+    <livery>
+      <file type="string">gray</file>
+      <shininess type="float">-0.75</shininess>
+    </livery>
+  </model>
 
   <systems>
     <electrical>
@@ -73,11 +108,10 @@ Using David Megginson's 172P as a starting point.
   <view>
    <internal archive="y">true</internal>
    <config>
-     <x-offset-m archive="y">-0.21</x-offset-m>
-     <y-offset-m archive="y">0.85</y-offset-m>
-     <z-offset-m archive="y">0.24</z-offset-m>
-     <pitch-offset-deg>-9</pitch-offset-deg>
-
+     <x-offset-m archive="y">-0.230</x-offset-m>
+     <y-offset-m archive="y">0.745</y-offset-m>
+     <z-offset-m archive="y">0.012</z-offset-m>
+     <pitch-offset-deg>-9.5</pitch-offset-deg>
    </config>
   </view>
 
@@ -100,9 +134,9 @@ Using David Megginson's 172P as a starting point.
       <back-right-direction-deg type="double">225</back-right-direction-deg>
       <right-direction-deg type="double">270</right-direction-deg>
       <front-right-direction-deg type="double">315</front-right-direction-deg>
-      <x-offset-m type="double"> 0.24</x-offset-m>  <!-- x left/right -->
-      <y-offset-m type="double"> 0.85</y-offset-m>  <!-- up/down    -->
-      <z-offset-m type="double"> 0.24</z-offset-m>   <!--  x front/back -->
+      <x-offset-m type="double"> 0.230</x-offset-m>  <!-- x left/right -->
+      <y-offset-m type="double"> 0.745</y-offset-m>  <!-- up/down    -->
+      <z-offset-m type="double"> 0.012</z-offset-m>   <!--  x front/back -->
       <pitch-offset-deg>-9</pitch-offset-deg>
       <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
     </config>
@@ -146,10 +180,10 @@ Using David Megginson's 172P as a starting point.
  <controls>
   <flight>
    <aileron-trim>0.054</aileron-trim>
-   <elevator-trim>0.0</elevator-trim><!-- FIXME set me! -->
+   <elevator-trim>0.0</elevator-trim>
   </flight>
   <avionics>
-   <power type="bool">1</power>
+   <power type="bool">true</power>
   </avionics>
   <engines>
    <engine n="0">
@@ -190,7 +224,9 @@ Using David Megginson's 172P as a starting point.
   <ercoupe>
     <file>Aircraft/ercoupe/Nasal/ercoupe.nas</file>
     <file>Aircraft/ercoupe/Nasal/Electrical.nas</file>
+    <file>Aircraft/ercoupe/Nasal/engine.nas</file>
     <file>Aircraft/ercoupe/Nasal/liveries.nas</file> 
+    <file>Aircraft/ercoupe/Nasal/rain.nas</file>
   </ercoupe>
  </nasal>
  <payload>

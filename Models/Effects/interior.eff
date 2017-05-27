@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertyList>
+ <name>Aircraft/ercoupe/Models/Effects/interior</name>
+ <inherits-from>Effects/model-combined-deferred</inherits-from>
+ <parameters>
+  <rain-enabled type="int">0</rain-enabled>
+  <normalmap-enabled type="int"> 0 </normalmap-enabled>
+  <normalmap-dds type="int"> 0 </normalmap-dds>
+  <normalmap-tiling type="float"> 1.0 </normalmap-tiling>
+  <lightmap-enabled type="int"> 0 </lightmap-enabled>
+  <reflection-enabled type="int"> 1 </reflection-enabled>
+  <reflection-correction>-0.75</reflection-correction>
+  <reflection-fresnel-factor type="float">0.6</reflection-fresnel-factor>
+  <reflection-type type="int">1</reflection-type>
+  <reflection-dynamic type="int"> 1 </reflection-dynamic>
+  <reflection-fresnel type="float"> 0.0 </reflection-fresnel>
+  <reflection-rainbow type="float"> 0.0 </reflection-rainbow>
+  <reflection-noise type="float"> 0.0 </reflection-noise>
+  <ambient-correction type="float"> 0.1 </ambient-correction>
+ </parameters>
+
+</PropertyList>

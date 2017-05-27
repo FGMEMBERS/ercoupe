@@ -9,7 +9,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
 <PropertyList>
 
  <name>C172P 2D instruments.</name>
- <background>Aircraft/c172p/Panels/Textures/transparent-bg.rgb</background>
+ <background>Aircraft/c172p/Panels/Textures/transparent-bg.png</background>
  <w>1424</w>
  <h>488</h>
  <view-height>500</view-height>
@@ -296,7 +296,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
     <layer>
      <name>background</name>
      <texture>
-      <path>Aircraft/c172p/Panels/Textures/transparent-bg.rgb</path>
+      <path>Aircraft/c172p/Panels/Textures/transparent-bg.png</path>
       <x1>0.0</x1>
       <y1>0.0</y1>
       <x2>1.0</x2>
@@ -306,7 +306,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
     <layer>
      <name>background</name>
      <texture>
-      <path>Aircraft/c172p/Panels/Textures/transparent-bg.rgb</path>
+      <path>Aircraft/c172p/Panels/Textures/transparent-bg.png</path>
       <x1>0.0</x1>
       <y1>0.0</y1>
       <x2>1.0</x2>
@@ -316,7 +316,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
     <layer>
      <name>background</name>
      <texture>
-      <path>Aircraft/c172p/Panels/Textures/transparent-bg.rgb</path>
+      <path>Aircraft/c172p/Panels/Textures/transparent-bg.png</path>
       <x1>0.0</x1>
       <y1>0.0</y1>
       <x2>1.0</x2>
@@ -326,7 +326,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
     <layer>
      <name>background</name>
      <texture>
-      <path>Aircraft/c172p/Panels/Textures/transparent-bg.rgb</path>
+      <path>Aircraft/c172p/Panels/Textures/transparent-bg.png</path>
       <x1>0.0</x1>
       <y1>0.0</y1>
       <x2>1.0</x2>
@@ -336,7 +336,7 @@ Legacy 2D instruments and actions for the 3D C172P cockpit.
     <layer>
      <name>background</name>
      <texture>
-      <path>Aircraft/c172p/Panels/Textures/transparent-bg.rgb</path>
+      <path>Aircraft/c172p/Panels/Textures/transparent-bg.png</path>
       <x1>0.0</x1>
       <y1>0.0</y1>
       <x2>1.0</x2>

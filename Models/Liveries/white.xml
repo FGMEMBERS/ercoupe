@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <model>
+      <livery>
+        <name type="string">White And Red</name>
+        <texture>Liveries/ercoupe-ext2-white.png</texture>
+        <shininess type="float">-0.75</shininess>
+      </livery>
+      <livery-wings>
+        <texture>Liveries/c150-02-white.png</texture>
+      </livery-wings>
+    </model>
+  </sim>
+</PropertyList>

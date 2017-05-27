@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<system name="FCS: Landing Gear">
+
+ <channel name="Landing Gear">
+  <aerosurface_scale name="Steer Pos Deg">
+   <input>fcs/aileron-cmd-norm</input>
+   <domain>
+    <min>-1</min>
+    <max>1</max>
+   </domain>
+   <range>
+    <min>-45</min>
+    <max>45</max>
+   </range>
+   <output>fcs/steer-pos-deg</output>
+  </aerosurface_scale>
+
+  <switch name="fcs/gear-no-wow">
+     <default value="1"/>
+     <test logic="AND" value="0">
+         gear/unit[1]/WOW eq 1
+         gear/unit[2]/WOW eq 1
+     </test>
+   </switch>
+ </channel>
+
+</system>
