@@ -14,7 +14,7 @@ JSBSim Ercoupe with 3D cockpit.
    The ERCO Ercoupe is a low-wing monoplane aircraft that was designed and built in the United States. It was first manufactured by the Engineering and Research Corporation (ERCO) shortly before World War II; several other manufacturers continued its production after the war. It was designed to be the safest fixed-wing aircraft that aerospace engineering could provide at the time.
   </long-description>
   <author>Erik Hofman, Ron Jensen (FDM and 3d Model), pab (3d Model), Harald Johnsen (Cockpit)</author>
-  <status>beta</status>
+  <status>production</status>
 
   <rating>
     <FDM type="int">5</FDM>
@@ -61,6 +61,7 @@ JSBSim Ercoupe with 3D cockpit.
 
   <model>
     <path archive="y">Aircraft/ercoupe/Models/ercoupe.xml</path>
+    <fallback-model-index type="int">8</fallback-model-index>
     <livery>
       <file type="string">gray</file>
       <shininess type="float">-0.75</shininess>
